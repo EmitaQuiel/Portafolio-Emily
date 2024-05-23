@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -12,7 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Portafolio</title>
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+    <title>Portafolio - Emily Castillo Quiel </title>
   </head>
   <body>
     <!-- Header del portafolio -->
@@ -21,15 +22,15 @@
         <div class="header-container">
           <nav>
             <div class="logo">
-              <img src="./assets/img/logo-Negro.png" alt="imagen de logo" />
+              <img src="./assets/img/logo.png" alt="imagen de logo" />
             </div>
-            <a class="nav-options" href="#">INICIO</a>
+            <!-- <a class="nav-options" href="#">INICIO</a>
             <a class="nav-options" href="#">SOBRE MI</a>
             <a class="nav-options" href="#">TECNOLOGIAS</a>
             <a class="nav-options" href="#">PROYECTOS</a>
-            <a class="nav-options" href="#">CONTACTO</a>
-            <a><i class="fa-brands fa-github" style="color: #000000; font-size: 30px; "></i></a>
-            <a><i class="fa-brands fa-linkedin" style="color: #000000; font-size: 30px;"></i></a>
+            <a class="nav-options" href="#">CONTACTO</a> -->
+            <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
+            <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
           </nav>
         </div>
       </div>
@@ -38,15 +39,76 @@
     <!-- Contenido principal del portafolio -->
     <main>
       <!-- Contenedor de bienvenida -->
-      <section class="section-bienvenida">
+      <section class="section-bienvenida" id="inicio">
         <div class="container-bienvenida">
           <div class="bienvenida-info">
-            <h1>Ingeniera de <br>Sistemas</h1>
-            <h2>Especializada en desarrollo web</h2>
-            <img src="./assets/img/imagen-bienvenida.png">
-          </div>
+            <div class="heading">
+              <div>
+                <p class="slide-up"><span class="red-vino">Ingeniera </span></p>
+              </div>
+              <div>
+                <p class="slide-up"></p>
+              </div>
+              <div>
+                <p class="slide-up">de Sistemas</p>
+              </div>
+              
+            </div>
+
+        </div>
+
+           <div class="hero_area">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 255, 255, 1" />
+            </svg>
         </div>
       </section>
+
+      <!-- Contenedor de sobre mi -->
+      <section class="section-sobremi" id="sobremi">
+        <div class="container-sobremi">
+          <div class="sobremi-1">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse lacinia dui ac ex fringilla, a viverra neque placerat.
+              Pellentesque in odio quis velit facilisis tempus ac a nisl. In
+              iaculis ligula posuere augue feugiat, non venenatis lacus lacinia.
+              Quisque nunc nulla, viverra et convallis id, tristique et massa.
+              Pellentesque nec viverra eros. Nulla eu laoreet eros. Nunc lacinia
+              placerat aliquam. Sed consectetur elit sed enim pretium
+              ullamcorper. Nam ac convallis enim. Nunc ut odio sapien. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Nam non eros scelerisque, mollis orci eget,
+              laoreet ipsum. Sed ac lacus interdum, viverra mi non, pellentesque
+              sapien. Integer imperdiet euismod quam ut fringilla. Phasellus
+              lacinia ultrices nisl cursus tempor.
+            </p> 
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- Contenedor de tecnologias -->
+      <section class="section-tecnologias" id="tecnologias">
+        <div class="container-tecnologias"></div>
+      </section>
+
+      <!-- Contenedor de mis proyectos -->
+      <section class="section-proyectos" id="proyectos">
+        <div class="container-tecnologias"></div>
+      </section>
     </main>
+
+    <!-- Contenedor de contacto -->
+    <footer>
+      <section class="section-contacto" id="contacto">
+        <div class="container-contacto"></div>
+      </section>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
