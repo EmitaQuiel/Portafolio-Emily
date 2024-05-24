@@ -2,8 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 
 @font-face {
-  font-family: SuperFestival;
-  src: url(/fonts/Super\ Festival\ Personal\ Use.ttf);
+  font-family: VALKO;
+  src: url(/fonts/VALKOCAPELARegular.ttf);
+}
+
+@font-face {
+  font-family: NASI;
+  src: url(/fonts/Nasi.otf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,7 +28,6 @@ header {
   width: 100%;
   background-color: #d20901;
   height: 80px;
-  position: fixed;
   color: white;
 }
 
@@ -71,89 +81,110 @@ header {
   border-bottom: 2px solid white;
 }
 
-.bienvenida-info {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  font-family: SuperFestival;
-  color: #ffffff;
+.iframely-embed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: white;
 }
 
-.heading {
-  position: relative;
+#app{
+  overflow-x: hidden;
+}
+
+.title {
+  padding-left: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1;
+
+  font-family: VALKO;
+  font-size: 8vw;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+
+  > .title-inner {
+    display: inline-block;
+  }
+}
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.cafe,
+.mozart {
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.title-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both;
+  margin-top: 150px;
   
-  top: 10px;
-  z-index: 1;
-  margin: 80px 0 0 80px;
-  font-size: 67px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: flex;
-  flex-direction: column;
-}
-.heading > div {
-  overflow: hidden;
-}
-.heading > div > p {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  white-space: nowrap;
-  margin: 0;
-  line-height: 117%;
 }
 
-.red-vino {
-  color: #000000;
+.cafe-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both,
+    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-div.heading > div {
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
-}
-div.heading > div:nth-child(2) > p {
-  -webkit-animation-delay: 0.05s;
-  animation-delay: 0.05s;
+.mozart-inner {
+  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-div.heading > div {
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
-}
-div.heading > div:nth-child(3) > p {
-  -webkit-animation-delay: 0.075s;
-  animation-delay: 0.075s;
+.title {
+  animation: outer-left 1s 1s ease both;
 }
 
-.slide-up {
-  -webkit-animation: slide-up 0.85s cubic-bezier(0.65, 0, 0.35, 1) both;
-  animation: slide-up 0.85s cubic-bezier(0.65, 0, 0.35, 1) both;
-}
-
-@-webkit-keyframes slide-up {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
+.cafe {
+  > .cafe-inner {
+    display: inline-block;
   }
 }
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.mozart {
+  display: inline-block;
 }
 
+.mozart-info{
+  font-size: 20px;
+  
+  position: relative;
+
+}
 
 .hero_area {
   position: relative;
   height: 200px;
-  top: 410px;
+  top: 80px;
   background-color: #d20901;
 }
 
@@ -203,6 +234,56 @@ div.heading > div:nth-child(3) > p {
   }
 }
 
+.section-sobremi{
+  width: 100%;
+  height: 300px;
+  margin-top: 300px;
+  
+  
+}
+
+.curved{
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+  -webkit-clip-path: ellipse(71% 59% at 50% 60%);
+  clip-path: ellipse(71% 59% at 50% 40%);
+  position: hidden;
+}
+
 .sobremi-1 p {
-  margin: 20px;
+  position: relative;
+  margin-left: 600px;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  right: 300px;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  word-spacing: 10px;
+}
+
+.container-sobremi h2{
+  font-family: Nasi;
+  font-size: 50px;
+  text-align: center;
+}
+
+.section-tecnologias {
+  width: 100%;
+  height: 750px;
+  background-color: #d20901; 
+  margin-top: 270px;
+}
+
+.curved-2 {
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+  -webkit-clip-path: ellipse(71% 59% at 50% 60%);
+  clip-path: ellipse(71% 59% at 50% 70%);
+  position: hidden;
+  margin-top: 560px;
 }
