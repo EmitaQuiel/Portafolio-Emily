@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,34 +12,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Portafolio - Emily Castillo Quiel </title>
   </head>
   <body>
-    <!-- Header del portafolio -->
-    <header>
-      <div class="header">
-        <div class="header-container">
-          <nav>
-            <div class="logo">
-              <img src="./assets/img/logo.png" alt="imagen de logo" />
-            </div>
-            <!-- <a class="nav-options" href="#">INICIO</a>
-            <a class="nav-options" href="#">SOBRE MI</a>
-            <a class="nav-options" href="#">TECNOLOGIAS</a>
-            <a class="nav-options" href="#">PROYECTOS</a>
-            <a class="nav-options" href="#">CONTACTO</a> -->
-            <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
-            <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
     <!-- Contenido principal del portafolio -->
     <main>
       <!-- Contenedor de bienvenida -->
       <section class="section-bienvenida" id="inicio">
+            <nav>
+              <div class="logo">
+                <img src="./assets/img/logo.png" alt="imagen de logo" />
+              </div>
+              
+              <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
+              <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
+
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </nav>
+
         <div id="app">
           <div class="title">
             <div class="title-inner">
@@ -89,39 +93,133 @@
               lacinia ultrices nisl cursus tempor.
             </p> 
           </div>
-          <div class="curved"></div>
         </div>
         
       </section>
 
       <!-- Contenedor de tecnologias -->
-      <section class="section-tecnologias" id="tecnologias">
-        <div class="container-tecnologias">
-          <div class="tecnologias">
-            <h2>Tecnologias</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse lacinia dui ac ex fringilla, a viverra neque placerat.
-              Pellentesque in odio quis velit facilisis tempus ac a nisl. In
-              iaculis ligula posuere augue feugiat, non venenatis lacus lacinia.
-              Quisque nunc nulla, viverra et convallis id, tristique et massa.
-              Pellentesque nec viverra eros. Nulla eu laoreet eros. Nunc lacinia
-              placerat aliquam. Sed consectetur elit sed enim pretium
-              ullamcorper. Nam ac convallis enim. Nunc ut odio sapien. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Nam non eros scelerisque, mollis orci eget,
-              laoreet ipsum. Sed ac lacus interdum, viverra mi non, pellentesque
-              sapien. Integer imperdiet euismod quam ut fringilla. Phasellus
-              lacinia ultrices nisl cursus tempor.
-            </p> 
+      <section class="section-educacion" id="educacion">
+        <div class="container-educacion">
+          <h2>Formacion educativa</h2>
+          <div class="educacion">
+            <div class="blog-slider">
+              <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    
+                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+                  </div>
+                  <div class="blog-slider__content">
+                    <span class="blog-slider__code">26 December 2019</span>
+                    <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                    
+                  </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+                  </div>
+                  <div class="blog-slider__content">
+                    <span class="blog-slider__code">26 December 2019</span>
+                    <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                    
+                  </div>
+                </div>
+                
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+                  </div>
+                  <div class="blog-slider__content">
+                    <span class="blog-slider__code">26 December 2019</span>
+                    <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              <div class="blog-slider__pagination"></div>
+            </div>
           </div>
         </div>
-        <div class="curved-2"></div>
       </section>
 
       <!-- Contenedor de mis proyectos -->
       <section class="section-proyectos" id="proyectos">
-        <div class="container-tecnologias"></div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card_proyecto_portafolio">
+                <div class="sliderText_proyecto">
+                  <img src="./img/1.jpg" alt="">
+                  
+                </div>
+                <div class="content_proyecto">
+                  <h3>Slide Two</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    lacinia dui ac ex fringilla, a viverra neque placerat. Pellentesque
+                  </p>
+                  <a href="">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide">
+              <div class="card_proyecto_portafolio">
+                <div class="sliderText_proyecto">
+                  <img src="./img/1.jpg" alt="">
+                  
+                </div>
+                <div class="content_proyecto">
+                  <h3>Slide Two</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    lacinia dui ac ex fringilla, a viverra neque placerat. Pellentesque
+                  </p>
+                  <a href="">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide">
+              <div class="card_proyecto_portafolio">
+                <div class="sliderText_proyecto">
+                  <img src="./img/1.jpg" alt="">
+                  
+                </div>
+                <div class="content_proyecto">
+                  <h3>Slide Two</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    lacinia dui ac ex fringilla, a viverra neque placerat. Pellentesque
+                  </p>
+                  <a href="">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-slide">
+              <div class="card_proyecto_portafolio">
+                <div class="sliderText_proyecto">
+                  <img src="./img/1.jpg" alt="">
+                  
+                </div>
+                <div class="content_proyecto">
+                  <h3>Slide Three</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    lacinia dui ac ex fringilla, a viverra neque placerat. Pellentesque
+                  </p>
+                  <a href="">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -131,6 +229,10 @@
         <div class="container-contacto"></div>
       </section>
     </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    
     <script src="./js/main.js"></script>
   </body>
 </html>
