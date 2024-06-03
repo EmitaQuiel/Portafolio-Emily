@@ -1,19 +1,52 @@
-var swiper = new Swiper('.swiper-container',{
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
+const sections = document.querySelectorAll('section');
+const circleContainer = document.getElementById('circle-container');
+
+// Creamos los círculos y los agregamos al contenedor
+sections.forEach((section, index) => {
+    const circle = document.createElement('div');
+    circle.classList.add('circle');
+    circleContainer.appendChild(circle);
+
+    // Agregamos un evento de clic para desplazarse a la sección correspondiente
+    circle.addEventListener('click', () => {
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
 });
+
+// Escuchamos el evento de desplazamiento para actualizar el estado de los círculos
+document.addEventListener('scroll', () => {
+    const currentSectionIndex = getCurrentSectionIndex();
+    updateCircle(currentSectionIndex);
+});
+
+// Función para obtener el índice de la sección visible actualmente
+function getCurrentSectionIndex() {
+    let currentIndex = 0;
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight) {
+            currentIndex = index;
+        }
+    });
+    return currentIndex;
+}
+
+// Función para actualizar el estado de los círculos
+function updateCircle(index) {
+    const circles = document.querySelectorAll('.circle');
+    circles.forEach((circle, i) => {
+        if (i === index) {
+            circle.classList.add('fill');
+        } else {
+            circle.classList.remove('fill');
+        }
+    });
+}
+
+
+
+
+
 
 var swiper = new Swiper('.blog-slider', {
   spaceBetween: 30,
@@ -143,3 +176,48 @@ $(document).ready(function() {
   
 });
 
+ // Obtener el modal
+// Obtener todos los botones que abren el modal
+var btns = document.querySelectorAll(".openModalButton");
+
+// Obtener todos los modales
+var modals = document.querySelectorAll(".modal");
+
+// Obtener el elemento <span> que cierra el modal
+var spans = document.querySelectorAll(".close");
+
+// Asociar cada botón con su modal correspondiente
+btns.forEach(function(btn) {
+    btn.onclick = function(event) {
+        event.preventDefault();
+        var targetModalId = this.closest('article').getAttribute('data-modal-target');
+        var targetModal = document.querySelector(targetModalId);
+        targetModal.style.display = "flex";
+        setTimeout(function() {
+            targetModal.classList.add("show");
+        }, 10);
+    }
+});
+
+// Asociar cada botón de cierre con su modal correspondiente
+spans.forEach(function(span) {
+    span.onclick = function() {
+        var modal = this.closest('.modal');
+        modal.classList.remove("show");
+        setTimeout(function() {
+            modal.style.display = "none";
+        }, 500); // Espera a que termine la animación
+    }
+});
+
+// Cuando el usuario hace clic en cualquier lugar fuera del modal, cierra el modal correspondiente
+window.onclick = function(event) {
+    modals.forEach(function(modal) {
+        if (event.target == modal) {
+            modal.classList.remove("show");
+            setTimeout(function() {
+                modal.style.display = "none";
+            }, 500); // Espera a que termine la animación
+        }
+    });
+}
