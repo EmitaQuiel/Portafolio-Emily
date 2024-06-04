@@ -42,11 +42,18 @@ function updateCircle(index) {
         }
     });
 }
+const darkModeSwitch = document.getElementById('dark-mode-switch');
+const main = document.querySelector('main');
 
-
-
-
-
+darkModeSwitch.addEventListener('change', () => {
+    if (darkModeSwitch.checked) {
+        // Activar modo oscuro
+        main.classList.add('dark-mode');
+    } else {
+        // Desactivar modo oscuro
+        main.classList.remove('dark-mode');
+    }
+});
 
 var swiper = new Swiper('.blog-slider', {
   spaceBetween: 30,
