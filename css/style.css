@@ -50,8 +50,8 @@ section {
 }
 
 .circle {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   background-color: transparent;
   border: 2px solid #000;
   border-radius: 50%;
@@ -62,16 +62,18 @@ section {
 
 .fill {
   animation: fillCircle 0.5s forwards;
+  background-color: #000;
 }
 
 @keyframes fillCircle {
   from {
-      background-color: transparent;
+    background-color: transparent;
   }
   to {
-      background-color: #000;
+    background-color: #000;
   }
 }
+
 
 .logo img {
   position: relative;
@@ -137,7 +139,7 @@ input:checked + .slider:before {
 .section-bienvenida {
   width: 100%;
   position: relative;
-  height: 950px;
+  height: 920px;
   background: #d20901;
   border-bottom: 2px solid white;
 }
@@ -337,8 +339,8 @@ input:checked + .slider:before {
 .section-educacion {
   width: 100%;
   height: 920px;
-  background-image: url("/assets/img/blob-scene-haikei.svg");
-  color: #fff;
+  background-image: url("/assets/img/blob-scene-haikei\ -rojo.svg");
+  color: #000000;
 }
 
 .container-educacion {
@@ -762,7 +764,6 @@ input:checked + .slider:before {
 }
 
 .dark-mode .section-educacion{
-  color: #000;
   background-image: url('/assets/img/blob-scene-haikei\ -negro.svg');
 }
 

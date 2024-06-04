@@ -1,37 +1,48 @@
 const sections = document.querySelectorAll('section');
 const circleContainer = document.getElementById('circle-container');
+let scrollTimeout;
 
-// Creamos los círculos y los agregamos al contenedor
 sections.forEach((section, index) => {
     const circle = document.createElement('div');
     circle.classList.add('circle');
     circleContainer.appendChild(circle);
 
-    // Agregamos un evento de clic para desplazarse a la sección correspondiente
     circle.addEventListener('click', () => {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 });
 
-// Escuchamos el evento de desplazamiento para actualizar el estado de los círculos
-document.addEventListener('scroll', () => {
-    const currentSectionIndex = getCurrentSectionIndex();
-    updateCircle(currentSectionIndex);
+const main = document.querySelector('main');
+main.addEventListener('scroll', () => {
+
+    if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+    }
+
+    scrollTimeout = setTimeout(() => {
+        const currentSectionIndex = getCurrentSectionIndex();
+        updateCircle(currentSectionIndex);
+    }, 100); 
 });
 
-// Función para obtener el índice de la sección visible actualmente
 function getCurrentSectionIndex() {
     let currentIndex = 0;
+    let minDistance = Infinity;
+    
     sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= window.innerHeight) {
+        const distance = Math.abs(rect.top);
+
+        if (distance < minDistance) {
+            minDistance = distance;
             currentIndex = index;
         }
     });
+
     return currentIndex;
 }
 
-// Función para actualizar el estado de los círculos
+
 function updateCircle(index) {
     const circles = document.querySelectorAll('.circle');
     circles.forEach((circle, i) => {
@@ -42,15 +53,17 @@ function updateCircle(index) {
         }
     });
 }
+
+updateCircle(getCurrentSectionIndex());
+
 const darkModeSwitch = document.getElementById('dark-mode-switch');
-const main = document.querySelector('main');
 
 darkModeSwitch.addEventListener('change', () => {
     if (darkModeSwitch.checked) {
-        // Activar modo oscuro
+        
         main.classList.add('dark-mode');
     } else {
-        // Desactivar modo oscuro
+        
         main.classList.remove('dark-mode');
     }
 });
@@ -62,7 +75,7 @@ var swiper = new Swiper('.blog-slider', {
   mousewheel: {
     invert: false,
   },
-  // autoHeight: true,
+  
   pagination: {
     el: '.blog-slider__pagination',
     clickable: true,
@@ -183,17 +196,16 @@ $(document).ready(function() {
   
 });
 
- // Obtener el modal
-// Obtener todos los botones que abren el modal
+
 var btns = document.querySelectorAll(".openModalButton");
 
-// Obtener todos los modales
+
 var modals = document.querySelectorAll(".modal");
 
-// Obtener el elemento <span> que cierra el modal
+
 var spans = document.querySelectorAll(".close");
 
-// Asociar cada botón con su modal correspondiente
+
 btns.forEach(function(btn) {
     btn.onclick = function(event) {
         event.preventDefault();
@@ -206,25 +218,25 @@ btns.forEach(function(btn) {
     }
 });
 
-// Asociar cada botón de cierre con su modal correspondiente
+
 spans.forEach(function(span) {
     span.onclick = function() {
         var modal = this.closest('.modal');
         modal.classList.remove("show");
         setTimeout(function() {
             modal.style.display = "none";
-        }, 500); // Espera a que termine la animación
+        }, 500); 
     }
 });
 
-// Cuando el usuario hace clic en cualquier lugar fuera del modal, cierra el modal correspondiente
+
 window.onclick = function(event) {
     modals.forEach(function(modal) {
         if (event.target == modal) {
             modal.classList.remove("show");
             setTimeout(function() {
                 modal.style.display = "none";
-            }, 500); // Espera a que termine la animación
+            }, 500); 
         }
     });
 }
