@@ -20,28 +20,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portafolio - Emily Castillo Quiel </title>
   </head>
   <body>
+    
+
     <!-- Contenido principal del portafolio -->
     <main>
       <!-- Contenedor de bienvenida -->
       <section class="section-bienvenida" id="inicio">
             <nav>
-
-              
               <div class="logo">
                 <img src="./assets/img/logo.png" alt="imagen de logo" />
               </div>
-              
-              <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
-              <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
-
-              <label class="switch">
-                <input type="checkbox" id="dark-mode-switch">
-                <span class="slider"></span>
-            </label>
+              <div class="redes-container">
+                <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
+                <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
+                <label class="switch">
+                  <input type="checkbox" id="dark-mode-switch">
+                  <span class="slider"></span>
+              </label>
+              </div>
             </nav>
 
         <div id="app">
@@ -160,6 +161,7 @@
                     <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
                     
                   </div>
+                  
                 </div>
 
               </div>
@@ -373,15 +375,57 @@
 <!-- Contenedor de contacto -->
     
 <section class="section-contacto" id="contacto">
-  <div class="container-contacto">Holaa</div>
+  <div class="container-contacto">
+    <div class="info-container">
+      <div class="info-contacto-1">
+        <p><i class="fa-solid fa-envelope" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a href="#" class="underline">fernandacq05@gmail.com</a></p>
+        <p><i class="fa-brands fa-whatsapp"style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a href="#" class="underline">+506 7138-4893</a></p>
+      </div>
+      <div class="info-contacto-2">
+        <p><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a href="#" class="underline">LinkedIn</a></p>
+        <p><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+          <a href="#" class="underline">GitHub</a></p>
+        <p><i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);""></i><a href="#" class="underline">Instagram</a></p>
+      </div>
+      <div id="lottie-animation" style="width: 500px; height: 500px; position: relative;
+      left: 150px;
+      top: 100px;"></div>
+
+      <button class="download-btn pixel-corners">
+        <div class="button-content">
+          <div class="svg-container">
+            <svg
+              class="download-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"
+              ></path>
+            </svg>
+          </div>
+          <div class="text-container">
+            <div class="text">Descargar CV</div>
+          </div>
+        </div>
+      </button>
+    </div>
+    <hr class="line">
+    </div>
+    
+  
 </section>
     </main>
     <div id="circle-container"></div>
-    
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
     <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+
+
   </body>
 </html>

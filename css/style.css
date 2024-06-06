@@ -53,7 +53,7 @@ section {
   width: 17px;
   height: 17px;
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid #5a5a5a;
   border-radius: 50%;
   margin: 5px 0;
   cursor: pointer;
@@ -70,16 +70,20 @@ section {
     background-color: transparent;
   }
   to {
-    background-color: #000;
+    background-color: #8d8d8d;
   }
 }
 
+.redes-container{
+  position: relative;
+  top: 90px;
+}
 
 .logo img {
-  position: relative;
-  width: 60px;
-  margin: 0 70px;
-  top: 10px;
+  position: fixed;
+  width: 70px;
+  margin: 0 80px;
+  top: 50px;
   cursor: pointer;
   filter: drop-shadow(0 0 2px #fff);
 }
@@ -250,12 +254,6 @@ input:checked + .slider:before {
   position: relative;
 }
 
-/* .hero_area {
-  position: relative;
-  height: 200px;
-  top: 80px;
-  background-color: #d20901;
-} */
 
 .waves {
   position: absolute;
@@ -476,17 +474,37 @@ input:checked + .slider:before {
   font-weight: 700;
   color: #0d0925;
   margin-bottom: 20px;
+  font-family: Nasi;
 }
 .blog-slider__title_small {
   font-size: 18px;
   font-weight: 700;
   color: #0d0925;
   margin-bottom: 20px;
+  font-family: Nasi;
 }
 .blog-slider__text {
   color: #4e4a67;
   margin-bottom: 30px;
   line-height: 2em;
+}
+.blog-slider__button {
+  display: inline-flex;
+  background-image: linear-gradient(147deg, #d20901 0%, #f4f4f4 74%);
+  padding: 15px 35px;
+  border-radius: 50px;
+  color: #000000;
+  box-shadow: 0px 4px 5px rgba(12, 94, 50, 0.3);
+  text-decoration: none;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  right: 590px;
+  font-family: Nasi;
+  top: 150px;
 }
 
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -748,39 +766,231 @@ input:checked + .slider:before {
   margin: 0;
 }
 
-.section-contacto{
-  background-color: #d20901;
+.section-contacto {
+  background: #d20901;
+}
+
+.info-contacto-1, .info-contacto-2{
+  position: relative;
+  top: 130px;
+}
+
+.info-contacto-1 p, .info-contacto-2 p{
+  margin: 120px;
+}
+
+.info-container{
+  display: flex;
+}
+
+
+.info-container i{
+  position: relative;
+  top: 3px;
+  margin: 13px;
+}
+
+.download-btn{
+  position: relative;
+  top: 680px;
+  right: 150px;
+}
+
+.download-btn {
+  height: 45px;
+  width: 180px;
+  cursor: pointer;
+  border: none;
+  background: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.button-content {
+  transform: translateY(-45px);
+  transition: all 250ms ease-in-out;
+}
+
+.svg-container,
+.text-container {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container .text {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity ease-in-out 250ms;
+  font-family: Nasi;
+}
+
+.download-icon {
+  height: 25px;
+  width: 25px;
+  fill: #000000;
+  opacity: 0;
+  transition: opacity ease-in-out 250ms;
+}
+
+/* hover state for the button */
+.download-btn:hover .button-content {
+  transform: translateY(0px);
+}
+
+.download-btn:hover .text {
+  opacity: 0;
+}
+
+.download-btn:hover .download-icon {
+  opacity: 1;
+}
+
+.download-btn:focus .download-icon {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.underline{
+	position: relative;
+	letter-spacing: 0.1em;
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration:none;
+  font-family: Nasi;
+	line-height: 1;
+}
+
+.underline::after{
+	left:0;
+	right:0;
+	content: "";
+	position: absolute;
+	height: 2px;
+	background: rgb(235, 235, 235);
+	bottom: -4px;
+	transform: scale(0,1);
+	transform-origin: 100% 50%;
+	transition: transform .5s ease;
+}
+
+.underline:hover::after{
+	transform: scale(1,1);
+	transform-origin: 0% 50%;
+}
+
+.line{
+  width: 1500px;
+  color: #000;
+  position: relative;
+  left: 15%;
+  top: 130px;
 }
 
 /* Dark mode */
-
 .dark-mode .section-bienvenida {
   background: #000;
   border-bottom-color: #fff;
+  height: 920px;
 }
 
 .dark-mode .section-sobremi {
-  background-image: url('/assets/img/background-bolas-negras.svg'); /* Elimina la imagen de fondo */
+  background-image: url("/assets/img/background-bolas-negras.svg"); /* Elimina la imagen de fondo */
 }
 
-.dark-mode .section-educacion{
-  background-image: url('/assets/img/blob-scene-haikei\ -negro.svg');
+.dark-mode .section-educacion {
+  background-image: url("/assets/img/blob-scene-haikei\ -negro.svg");
 }
 
 .dark-mode .blog-slider__pagination .swiper-pagination-bullet-active {
   background: #000000;
 }
 
-.dark-mode  .blog-slider__img {
+.dark-mode .blog-slider__img {
   box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.2);
 }
-  
-.dark-mode .section-proyecto{
+
+.dark-mode .section-proyecto {
   background-color: #ffffff;
-opacity: 1;
-background-image:  radial-gradient(#000000 2px, transparent 2px), radial-gradient(#000000 2px, #ffffff 2px);
-background-size: 80px 80px;
-background-position: 0 0,40px 40px;
+  opacity: 1;
+  background-image: radial-gradient(#000000 2px, transparent 2px),
+    radial-gradient(#000000 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .dark-mode .cta {
@@ -790,4 +1000,8 @@ background-position: 0 0,40px 40px;
 
 .dark-mode .cta h2 {
   color: #000;
+}
+
+.dark-mode .section-contacto {
+  background: #000;
 }
