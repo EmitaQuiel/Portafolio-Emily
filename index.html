@@ -1,431 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Portafolio - Emily Castillo Quiel </title>
-  </head>
-  <body>
-    
 
-    <!-- Contenido principal del portafolio -->
-    <main>
-      <!-- Contenedor de bienvenida -->
-      <section class="section-bienvenida" id="inicio">
-            <nav>
-              <div class="logo">
-                <img src="./assets/img/logo.png" alt="imagen de logo" />
-              </div>
-              <div class="redes-container">
-                <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
-                <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
-                <label class="switch">
-                  <input type="checkbox" id="dark-mode-switch">
-                  <span class="slider"></span>
-              </label>
-              </div>
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Portafolio - Emily Castillo Quiel </title>
+</head>
 
-        <div id="app">
-          <div class="title">
-            <div class="title-inner">
-              <div class="cafe">
-                <div class="cafe-inner">Emily</div>
-              </div>
-              <div class="mozart">
-                <div class="mozart-inner">Castillo</div>
-              </div>
+<body>
+
+
+  <!-- Contenido principal del portafolio -->
+  <main>
+    <!-- Contenedor de bienvenida -->
+    <section class="section-bienvenida" id="inicio">
+      <nav>
+        <a href="#inicio">
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="logo blanco" class="logo-blanco" />
+            
+        </div>
+        </a>
+        <div class="redes-container">
+          <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github"
+              style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
+          <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i
+              class="fa-brands fa-linkedin"
+              style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
+          <label class="switch">
+            <input type="checkbox" id="dark-mode-switch">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </nav>
+
+      <div id="app">
+        <div class="title">
+          <div class="title-inner">
+            <div class="cafe">
+              <div class="cafe-inner">Emily</div>
+            </div>
+            <div class="mozart">
+              <div class="mozart-inner">Castillo</div>
             </div>
           </div>
         </div>
+      </div>
 
-           <div class="hero_area">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 255, 255, 1" />
-            </svg>
+      <div class="hero_area">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255, 255, 255, 1" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Contenedor de sobre mi -->
+    <section class="section-sobremi" id="sobremi">
+      <div class="container-sobremi">
+        <h2>Sobre Mi</h2>
+        <div class="sobremi-1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse lacinia dui ac ex fringilla, a viverra neque placerat.
+            Pellentesque in odio quis velit facilisis tempus ac a nisl. In
+            iaculis ligula posuere augue feugiat, non venenatis lacus lacinia.
+            Quisque nunc nulla, viverra et convallis id, tristique et massa.
+            Pellentesque nec viverra eros. Nulla eu laoreet eros. Nunc lacinia
+            placerat aliquam. Sed consectetur elit sed enim pretium
+            ullamcorper. Nam ac convallis enim. Nunc ut odio sapien. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Nam non eros scelerisque, mollis orci eget,
+            laoreet ipsum. Sed ac lacus interdum, viverra mi non, pellentesque
+            sapien. Integer imperdiet euismod quam ut fringilla. Phasellus
+            lacinia ultrices nisl cursus tempor.
+          </p>
         </div>
-      </section>
+      </div>
 
-      <!-- Contenedor de sobre mi -->
-      <section class="section-sobremi" id="sobremi">
-        <div class="container-sobremi">
-          <h2>Sobre Mi</h2>
-          <div class="sobremi-1">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse lacinia dui ac ex fringilla, a viverra neque placerat.
-              Pellentesque in odio quis velit facilisis tempus ac a nisl. In
-              iaculis ligula posuere augue feugiat, non venenatis lacus lacinia.
-              Quisque nunc nulla, viverra et convallis id, tristique et massa.
-              Pellentesque nec viverra eros. Nulla eu laoreet eros. Nunc lacinia
-              placerat aliquam. Sed consectetur elit sed enim pretium
-              ullamcorper. Nam ac convallis enim. Nunc ut odio sapien. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Nam non eros scelerisque, mollis orci eget,
-              laoreet ipsum. Sed ac lacus interdum, viverra mi non, pellentesque
-              sapien. Integer imperdiet euismod quam ut fringilla. Phasellus
-              lacinia ultrices nisl cursus tempor.
-            </p> 
-          </div>
-        </div>
-        
-      </section>
+    </section>
 
-      <!-- Contenedor de tecnologias -->
-      <section class="section-educacion" id="educacion">
-        <div class="container-educacion">
-          <h2>Formacion educativa</h2>
-          <div class="educacion">
-            <div class="blog-slider">
-              <div class="blog-slider__wrp swiper-wrapper">
-                <div class="blog-slider__item swiper-slide">
-                  <div class="blog-slider__img">
-                    
-                    <img src="./assets/img/Logo_UISIL.jpg" alt="">
-                  </div>
-                  <div class="blog-slider__content">
-                    <span class="blog-slider__code">Enero 2022 / Diciembre 2024</span>
-                    <div class="blog-slider__title">Universidad Internacion San Isidro Labrador</div>
-                    <div class="blog-slider__title_small">Bachillera en Ingenieria de Sistemas</div>
-                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                    
-                  </div>
-                </div>
-                <div class="blog-slider__item swiper-slide">
-                  <div class="blog-slider__img">
-                    <img src="./assets/img/Oracle_Logo.jpg" alt="">
-                  </div>
-                  <div class="blog-slider__content">
-                    <span class="blog-slider__code">Abril 2023 / Octubre 2023</span>
-                    <div class="blog-slider__title">Oracle Next Education</div>
-                    <div class="blog-slider__title_small">Especializacion en Frontend</div>
-                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                    
-                  </div>
-                </div>
-                
-                <div class="blog-slider__item swiper-slide">
-                  <div class="blog-slider__img">
-                    <img src="./assets/img/Logo_Coderhouse.jpg" alt="">
-                  </div>
-                  <div class="blog-slider__content">
-                    <span class="blog-slider__code">Junio 2023 / Octubre 2023</span>
-                    <div class="blog-slider__title">JavaScript</div>
-                    <div class="blog-slider__text">Bachillera en Ingenieria de Sistemas</div>
-                    
-                  </div>
-                </div>
-                
-                <div class="blog-slider__item swiper-slide">
-                  <div class="blog-slider__img">
-                    <img src="./assets/img/Logo_Coderhouse.jpg" alt="">
-                  </div>
-                  <div class="blog-slider__content">
-                    <span class="blog-slider__code">Setiembre 2022 / Diciembre 2022</span>
-                    <div class="blog-slider__title">SQL</div>
-                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                  </div>
-                </div>
+    <!-- Contenedor de tecnologias -->
+    <section class="section-educacion" id="educacion">
+      <div class="container-educacion">
+        <h2>Formacion educativa</h2>
+        <div class="educacion">
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
 
-                <div class="blog-slider__item swiper-slide">
-                  <div class="blog-slider__img">
-                    <img src="./assets/img/Logo_JA.jpg" alt="">
-                  </div>
-                  <div class="blog-slider__content">
-                    <span class="blog-slider__code">Mayo 2024 / Octubre 2024</span>
-                    <div class="blog-slider__title">Junior Achievement Américas</div>
-                    <div class="blog-slider__title_small">Certificacion en Soporte Tecnico en Ciberseguridad de CISCO - CCST</div>
-                    <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                    
-                  </div>
-                  
+                  <img src="./assets/img/Logo_UISIL.jpg" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Enero 2022 / Diciembre 2024</span>
+                  <div class="blog-slider__title">Universidad Internacion San Isidro Labrador</div>
+                  <div class="blog-slider__title_small">Bachillera en Ingenieria de Sistemas</div>
+                  <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                    voluptate repellendus magni illo ea animi?</div>
+
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="./assets/img/Oracle_Logo.jpg" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Abril 2023 / Octubre 2023</span>
+                  <div class="blog-slider__title">Oracle Next Education</div>
+                  <div class="blog-slider__title_small">Especializacion en Frontend</div>
+                  <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                    voluptate repellendus magni illo ea animi?</div>
+
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="./assets/img/Logo_Coderhouse.jpg" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Junio 2023 / Octubre 2023</span>
+                  <div class="blog-slider__title">JavaScript</div>
+                  <div class="blog-slider__text">Bachillera en Ingenieria de Sistemas</div>
+
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="./assets/img/Logo_Coderhouse.jpg" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Setiembre 2022 / Diciembre 2022</span>
+                  <div class="blog-slider__title">SQL</div>
+                  <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                    voluptate repellendus magni illo ea animi?</div>
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="./assets/img/Logo_JA.jpg" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Mayo 2024 / Octubre 2024</span>
+                  <div class="blog-slider__title">Junior Achievement Américas</div>
+                  <div class="blog-slider__title_small">Certificacion en Soporte Tecnico en Ciberseguridad de CISCO -
+                    CCST</div>
+                  <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+
                 </div>
 
               </div>
-              <div class="blog-slider__pagination"></div>
+
             </div>
+            <div class="blog-slider__pagination"></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      
 
-      <!-- Contenedor de mis proyectos -->
-      <section class="section-proyecto" id="proyectos">
-        <h2 class="titulo_proyectos">Proyectos</h2>
-        <div class="cards-container-proyectos">
-          <article class="cta" data-modal-target="#modalProyectoEstudiantil">
-            <img src='./assets/img/img_ProyectoEstudiantil/Menu_Principal.png' alt='Bluetit'>
-            <div class="cta__text-column">
-              <h2>Proyecto Estudiantil</h2>
-              <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its aspect ratio. Cool!</p>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-            </div>
-          </article>
-          
-          <article class="cta" data-modal-target="#modalPokoPalace">
-            <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt='Small blue-grey yellow-breasted bird'>
-            <div class="cta__text-column">
-              <h2>Ecommerce Poko Palace</h2>
-              <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its aspect ratio. Cool!</p>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-            </div>
-          </article>
 
-          <article class="cta" data-modal-target="#modalTCGPokemon">
-            <img src='./assets/img/Cards&Games/Inicio.jpg' alt='Small blue-grey yellow-breasted bird'>
-            <div class="cta__text-column">
-              <h2>Ecommerce TCG Pokemon</h2>
-              <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its aspect ratio. Cool!</p>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-            </div>
-          </article>
+    <!-- Contenedor de mis proyectos -->
+    <section class="section-proyecto" id="proyectos">
+      <h2 class="titulo_proyectos">Proyectos</h2>
+      <div class="cards-container-proyectos">
+        <article class="cta" data-modal-target="#modalProyectoEstudiantil">
+          <img src='./assets/img/img_ProyectoEstudiantil/Menu_Principal.png' alt='Bluetit'>
+          <div class="cta__text-column">
+            <h2>Proyecto Estudiantil</h2>
+            <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its
+              aspect ratio. Cool!</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
+          </div>
+        </article>
 
-          <article class="cta" data-modal-target="#modalSistemaVentas">
-            <img src='./assets/img/Sistema de Ventas/Inicio.jpg' alt='Small blue-grey yellow-breasted bird'>
-            <div class="cta__text-column">
-              <h2>Sistema de Ventas</h2>
-              <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its aspect ratio. Cool!</p>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-            </div>
-          </article>
+        <article class="cta" data-modal-target="#modalPokoPalace">
+          <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt='Small blue-grey yellow-breasted bird'>
+          <div class="cta__text-column">
+            <h2>Ecommerce Poko Palace</h2>
+            <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its
+              aspect ratio. Cool!</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
+          </div>
+        </article>
 
-          <article class="cta" data-modal-target="#modalMysql">
-            <img src='./assets/img/Mysql.png' alt='Small blue-grey yellow-breasted bird'>
-            <div class="cta__text-column">
-              <h2>Base de Datos Pokemon</h2>
-              <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its aspect ratio. Cool!</p>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-            </div>
-          </article>
-        </div>
-      </section>
+        <article class="cta" data-modal-target="#modalTCGPokemon">
+          <img src='./assets/img/Cards&Games/Inicio.jpg' alt='Small blue-grey yellow-breasted bird'>
+          <div class="cta__text-column">
+            <h2>Ecommerce TCG Pokemon</h2>
+            <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its
+              aspect ratio. Cool!</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
+          </div>
+        </article>
 
-      <div id="modalProyectoEstudiantil" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
+        <article class="cta" data-modal-target="#modalSistemaVentas">
+          <img src='./assets/img/Sistema de Ventas/Inicio.jpg' alt='Small blue-grey yellow-breasted bird'>
+          <div class="cta__text-column">
+            <h2>Sistema de Ventas</h2>
+            <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its
+              aspect ratio. Cool!</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
+          </div>
+        </article>
+
+        <article class="cta" data-modal-target="#modalMysql">
+          <img src='./assets/img/Mysql.png' alt='Small blue-grey yellow-breasted bird'>
+          <div class="cta__text-column">
+            <h2>Base de Datos Pokemon</h2>
+            <p>This image has an aspect ratio of 3/2. But when the text is longer, the image grows too, overriding its
+              aspect ratio. Cool!</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div id="modalProyectoEstudiantil" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/img/img_ProyectoEstudiantil/Menu_Principal.png" alt="">
+        <h2>Proyecto Matricula Estudiantil</h2>
+        <hr class="linea-separadora">
+        <ul>
+          <div class="flex-container">
+            <li class="inline-block">Categoría</li>
+            <p class="inline-block">Proyecto Backend</p>
+          </div>
+          <div class="flex-container">
+            <li class="inline-block">Año </li>
+            <p class="inline-block">2022</p>
+          </div>
+          <hr class="linea-separadora-vertical">
+        </ul>
+        <p>Contenido del modal...</p>
+        <div class="contenedor-imagenes-proyectos">
+          <div class="imagen-contenedor">
+            <h2>Menu Principal</h2>
             <img src="./assets/img/img_ProyectoEstudiantil/Menu_Principal.png" alt="">
-            <h2>Proyecto Matricula Estudiantil</h2>
-            <hr class="linea-separadora">
-            <ul>
-                <div class="flex-container">
-                    <li class="inline-block">Categoría</li>
-                    <p class="inline-block">Proyecto Backend</p>
-                </div>
-                <div class="flex-container">
-                    <li class="inline-block">Año </li>
-                    <p class="inline-block">2022</p>
-                </div>
-                <hr class="linea-separadora-vertical">
-            </ul>
-            <p>Contenido del modal...</p>
-            <div class="contenedor-imagenes-proyectos">
-              <div class="imagen-contenedor">
-                <h2>Menu Principal</h2>
-                <img src="./assets/img/img_ProyectoEstudiantil/Menu_Principal.png" alt="">
-              </div>
-              <div class="imagen-contenedor">
-                <h2>Menú Añadir</h2>
-                <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Anadir.png" alt="">
-              </div>
-              
-              <div class="imagen-contenedor">
-                <h2>Menú Ingenieria</h2>
-                <img src="./assets/img/img_ProyectoEstudiantil/Apartado_ING.png" alt="">
-              </div>
-              
-              <div class="imagen-contenedor">
-                <h2>Menú Actualizar</h2>
-                <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Actualizar.png" alt="">
-              </div>
-              <div class="imagen-contenedor">
-                <h2>Menú Buscar</h2>
-                <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Busqueda.png" alt="">
-              </div>
-              <div class="imagen-contenedor">
-                <h2>Menú Eliminar</h2>
-                <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Eliminar.png" alt="">
-              </div>
-              
-              <div class="imagen-contenedor">
-                <h2>Agradecimiento</h2>
-                <img src="./assets/img/img_ProyectoEstudiantil/Apartado_Agradecimiento.png" alt="">
-              </div>
-            </div>
+          </div>
+          <div class="imagen-contenedor">
+            <h2>Menú Añadir</h2>
+            <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Anadir.png" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Menú Ingenieria</h2>
+            <img src="./assets/img/img_ProyectoEstudiantil/Apartado_ING.png" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Menú Actualizar</h2>
+            <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Actualizar.png" alt="">
+          </div>
+          <div class="imagen-contenedor">
+            <h2>Menú Buscar</h2>
+            <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Busqueda.png" alt="">
+          </div>
+          <div class="imagen-contenedor">
+            <h2>Menú Eliminar</h2>
+            <img src="./assets/img/img_ProyectoEstudiantil/Espacio_Eliminar.png" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Agradecimiento</h2>
+            <img src="./assets/img/img_ProyectoEstudiantil/Apartado_Agradecimiento.png" alt="">
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <div id="modalPokoPalace" class="modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
-          <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt="">
-          <h2>Ecommerce Poko Palace</h2>
-          <hr class="linea-separadora">
-          <ul>
-              <div class="flex-container">
-                  <li class="inline-block">Categoría</li>
-                  <p class="inline-block">Ecommerce</p>
-              </div>
-              <div class="flex-container">
-                  <li class="inline-block">Año </li>
-                  <p class="inline-block">2023</p>
-              </div>
-              <hr class="linea-separadora-vertical">
-          </ul>
-          <p>Contenido del modal...</p>
-          <div class="contenedor-imagenes-proyectos">
-              <!-- Contenido específico del modal -->
-          </div>
-      </div>
-  </div>
-
-  <div id="modalTCGPokemon" class="modal">
-    <div class="modal-content">
         <span class="close">&times;</span>
         <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt="">
         <h2>Ecommerce Poko Palace</h2>
         <hr class="linea-separadora">
         <ul>
-            <div class="flex-container">
-                <li class="inline-block">Categoría</li>
-                <p class="inline-block">Ecommerce</p>
-            </div>
-            <div class="flex-container">
-                <li class="inline-block">Año </li>
-                <p class="inline-block">2023</p>
-            </div>
-            <hr class="linea-separadora-vertical">
+          <div class="flex-container">
+            <li class="inline-block">Categoría</li>
+            <p class="inline-block">Ecommerce</p>
+          </div>
+          <div class="flex-container">
+            <li class="inline-block">Año </li>
+            <p class="inline-block">2023</p>
+          </div>
+          <hr class="linea-separadora-vertical">
         </ul>
         <p>Contenido del modal...</p>
         <div class="contenedor-imagenes-proyectos">
-            <!-- Contenido específico del modal -->
+          <div class="imagen-contenedor">
+            <h2>Menu Principal</h2>
+            <img src="./assets/img/img_Poko_Palace/Pagina_Principal.jpg" alt="">
+          </div>
+          <div class="imagen-contenedor">
+            <h2>Apartado de Productos</h2>
+            <img src="./assets/img/img_Poko_Palace/Apartado_Productos.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Apartado Carrito</h2>
+            <img src="./assets/img/img_Poko_Palace/Apartado_Carrito.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Formulario de Cliente</h2>
+            <img src="./assets/img/img_Poko_Palace/Formulario_Cliente.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Resumen de la compra</h2>
+            <img src="./assets/img/img_Poko_Palace/Resumen_Compra.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Registro de Usuario</h2>
+            <img src="./assets/img/img_Poko_Palace/Registro.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Historial de Cliente</h2>
+            <img src="./assets/img/img_Poko_Palace/Historial_Compra.jpg" alt="">
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div id="modalSistemaVentas" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt="">
-      <h2>Ecommerce Poko Palace</h2>
-      <hr class="linea-separadora">
-      <ul>
+    <div id="modalTCGPokemon" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt="">
+        <h2>Ecommerce Cards&Games</h2>
+        <hr class="linea-separadora">
+        <ul>
           <div class="flex-container">
-              <li class="inline-block">Categoría</li>
-              <p class="inline-block">Ecommerce</p>
+            <li class="inline-block">Categoría</li>
+            <p class="inline-block">Ecommerce</p>
           </div>
           <div class="flex-container">
-              <li class="inline-block">Año </li>
-              <p class="inline-block">2023</p>
+            <li class="inline-block">Año </li>
+            <p class="inline-block">2023</p>
           </div>
           <hr class="linea-separadora-vertical">
-      </ul>
-      <p>Contenido del modal...</p>
-      <div class="contenedor-imagenes-proyectos">
-          <!-- Contenido específico del modal -->
-      </div>
-  </div>
-</div>
+        </ul>
+        <p>Contenido del modal...</p>
+        <div class="contenedor-imagenes-proyectos">
+          <div class="imagen-contenedor">
+            <h2>Pagina de Inicio</h2>
+            <img src="./assets/img/Cards&Games/Inicio.jpg" alt="">
+          </div>
 
-<div id="modalMysql" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <img src='./assets/img/Proyecto Base de datos/Diagrama Entidad-Relacion.png' alt="">
-      <h2>Base de Datos Pokemon</h2>
-      <hr class="linea-separadora">
-      <ul>
+          <div class="imagen-contenedor">
+            <h2>Pagina de Productos</h2>
+            <img src="./assets/img/Cards&Games/Productos.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Pagina de Inicio</h2>
+            <img src="./assets/img/Cards&Games/Carrito.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Mensaje de Compra</h2>
+            <img src="./assets/img/Cards&Games/Mensaje_Compra.jpg" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="modalSistemaVentas" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt="">
+        <h2>Sistema de Ventas</h2>
+        <hr class="linea-separadora">
+        <ul>
           <div class="flex-container">
-              <li class="inline-block">Categoría</li>
-              <p class="inline-block">Base de Datos</p>
+            <li class="inline-block">Categoría</li>
+            <p class="inline-block">Ecommerce</p>
           </div>
           <div class="flex-container">
-              <li class="inline-block">Año </li>
-              <p class="inline-block">2023</p>
+            <li class="inline-block">Año </li>
+            <p class="inline-block">2023</p>
           </div>
           <hr class="linea-separadora-vertical">
-      </ul>
-      <p>Contenido del modal...</p>
-      
-  </div>
-</div>
+        </ul>
+        <p>Contenido del modal...</p>
+        <div class="contenedor-imagenes-proyectos">
+          <div class="imagen-contenedor">
+            <h2>Inicio</h2>
+            <img src="./assets/img/Sistema de Ventas/Inicio.jpg" alt="">
+          </div>
 
-<!-- Contenedor de contacto -->
-    
-<section class="section-contacto" id="contacto">
-  <div class="container-contacto">
-    <div class="info-container">
-      <div class="info-contacto-1">
-        <p><i class="fa-solid fa-envelope" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a href="#" class="underline">fernandacq05@gmail.com</a></p>
-        <p><i class="fa-brands fa-whatsapp"style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a href="#" class="underline">+506 7138-4893</a></p>
+          <div class="imagen-contenedor">
+            <h2>Apartado Productos</h2>
+            <img src="./assets/img/Sistema de Ventas/Productos.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Apartado Clientes</h2>
+            <img src="./assets/img/Sistema de Ventas/Clientes.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Apartado Usuarios</h2>
+            <img src="./assets/img/Sistema de Ventas/Usuarios.jpg" alt="">
+          </div>
+
+          <div class="imagen-contenedor">
+            <h2>Apartado de Reportes</h2>
+            <img src="./assets/img/Sistema de Ventas/Reporte Ventas.jpg" alt="">
+          </div>
+        </div>
       </div>
-      <div class="info-contacto-2">
-        <p><i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a href="#" class="underline">LinkedIn</a></p>
-        <p><i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
-          <a href="#" class="underline">GitHub</a></p>
-        <p><i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);""></i><a href="#" class="underline">Instagram</a></p>
+    </div>
+
+    <div id="modalMysql" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src='./assets/img/Proyecto Base de datos/Diagrama Entidad-Relacion.png' alt="">
+        <h2>Base de Datos Pokemon</h2>
+        <hr class="linea-separadora">
+        <ul>
+          <div class="flex-container">
+            <li class="inline-block">Categoría</li>
+            <p class="inline-block">Base de Datos</p>
+          </div>
+          <div class="flex-container">
+            <li class="inline-block">Año </li>
+            <p class="inline-block">2023</p>
+          </div>
+          <hr class="linea-separadora-vertical">
+        </ul>
+        <p>Contenido del modal...</p>
+
       </div>
-      <div id="lottie-animation" style="width: 500px; height: 500px; position: relative;
+    </div>
+
+    <!-- Contenedor de contacto -->
+
+    <section class="section-contacto" id="contacto">
+      <div class="container-contacto">
+        <div class="info-container">
+          <div class="info-contacto-1">
+            <p>
+              <i class="fa-solid fa-envelope"
+                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+              <a href="mailto:fernandacq05@gmail.com" class="underline">fernandacq05@gmail.com</a>
+            </p>
+
+            <p>
+              <i class="fa-brands fa-whatsapp"
+                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+              <a href="https://wa.me/50671384893" class="underline">+506 7138-4893</a>
+            </p>
+
+          </div>
+          <div class="info-contacto-2">
+            <p><i class="fa-brands fa-linkedin"
+                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a
+                href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"
+                class="underline">LinkedIn</a></p>
+            <p><i class="fa-brands fa-github"
+                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+              <a href="https://github.com/EmitaQuiel" target="_blank" class="underline">GitHub</a>
+            </p>
+            <p><i class="fa-brands fa-instagram"
+                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);""></i><a href="
+                https://www.instagram.com/emily___0507?igsh=MTg3M3B4MWp5Z2ho&utm_source=qr" target="_blank"
+                class="underline">Instagram</a></p>
+          </div>
+          <div id="lottie-animation" style="width: 500px; height: 500px; position: relative;
       left: 150px;
       top: 100px;"></div>
 
-      <button class="download-btn pixel-corners">
-        <div class="button-content">
-          <div class="svg-container">
-            <svg
-              class="download-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"
-              ></path>
-            </svg>
-          </div>
-          <div class="text-container">
-            <div class="text">Descargar CV</div>
-          </div>
+          <button class="download-btn pixel-corners">
+            <div class="button-content">
+              <div class="svg-container">
+                <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z">
+                  </path>
+                </svg>
+              </div>
+              <div class="text-container">
+                <div class="text">Descargar CV</div>
+              </div>
+            </div>
+          </button>
         </div>
-      </button>
-    </div>
-    <hr class="line">
-    </div>
-    
-  
-</section>
-    </main>
-    <div id="circle-container"></div>
-    
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
-    <script src="./js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <hr class="line">
+      </div>
 
 
+    </section>
+  </main>
+  <div id="circle-container"></div>
 
-  </body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+</body>
+
 </html>
