@@ -247,3 +247,4 @@ lottie.loadAnimation({
   autoplay: true,
   path: "/assets/img/Animation - 1717634476296.json", // la ruta al archivo JSON de la animación
 });
+

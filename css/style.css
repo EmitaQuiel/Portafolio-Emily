@@ -144,7 +144,8 @@ input:checked + .slider:before {
   width: 100%;
   position: relative;
   height: 920px;
-  background: #d20901;
+  background-color: #d20901;
+  background-image: url("/assets/img/background-figuras.png");
   border-bottom: 2px solid white;
 }
 
@@ -323,13 +324,26 @@ input:checked + .slider:before {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  word-spacing: 10px;
+  word-spacing: 20px;
 }
 
 .container-sobremi h2 {
   font-family: Nasi;
   font-size: 50px;
   text-align: center;
+}
+
+.tecnologias-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.tecnologias-icon img {
+  width: 48px;
+  height: 48px;
 }
 
 /* Inicio de seccion de educacion */
@@ -467,6 +481,7 @@ input:checked + .slider:before {
   margin-bottom: 15px;
   display: block;
   font-weight: 500;
+  font-family: "Inconsolata", monospace;
 }
 .blog-slider__title {
   font-size: 28px;
@@ -486,6 +501,8 @@ input:checked + .slider:before {
   color: #4e4a67;
   margin-bottom: 30px;
   line-height: 2em;
+  padding-right: 50px;
+  font-family: "Inconsolata", monospace;
 }
 .blog-slider__button {
   display: inline-flex;
@@ -679,6 +696,7 @@ input:checked + .slider:before {
 .modal.show .modal-content {
   transform: rotateY(0);
 }
+
 .close {
   color: #aaa;
   float: right;
@@ -690,6 +708,11 @@ input:checked + .slider:before {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.imagen-principal-proyectos {
+  position: relative;
+  bottom: 90px;
 }
 
 .modal-content img {
@@ -707,16 +730,24 @@ input:checked + .slider:before {
   right: 100px;
 }
 
+.contenedor-imagenes-proyectos {
+  padding-bottom: 20px;
+}
+
 .contenedor-imagenes-proyectos h2 {
   text-align: center;
   position: relative;
   left: 20px;
 }
 
+.imagen-contenedor {
+  margin-top: 50px;
+}
+
 .linea-separadora {
   border: none;
   position: relative;
-  width: 60%;
+  width: 54%;
   left: 24%;
   height: 2px;
   background-color: #d20901;
@@ -736,12 +767,21 @@ input:checked + .slider:before {
   color: #d20901;
   list-style: none;
 }
-.modal-content p {
+
+.descripcion-proyecto {
+  width: 40%;
+  position: relative;
+  left: 850px;
+  bottom: 230px;
+}
+
+.descripcion-proyecto p {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 19px;
+  word-spacing: 15px;
 }
 .flex-container {
   margin: 10px 0;
@@ -793,7 +833,7 @@ input:checked + .slider:before {
 .download-btn {
   position: relative;
   top: 680px;
-  right: 150px;
+  right: 250px;
 }
 
 .download-btn {
@@ -925,45 +965,47 @@ input:checked + .slider:before {
   }
 }
 
-.underline {
-  position: relative;
-  letter-spacing: 0.1em;
-  font-size: 20px;
-  color: #ffffff;
+.info-container p a {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+.info-container p a {
   text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline-block;
   font-family: Nasi;
-  line-height: 1;
+  position: relative;
 }
 
-.underline::after {
-  left: 0;
-  right: 0;
+.info-container p a::after {
   content: "";
+  width: 0;
+  height: 3px;
+  background: #ffffff;
   position: absolute;
-  height: 2px;
-  background: rgb(235, 235, 235);
-  bottom: -4px;
-  transform: scale(0, 1);
-  transform-origin: 100% 50%;
-  transition: transform 0.5s ease;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 
-.underline:hover::after {
-  transform: scale(1, 1);
-  transform-origin: 0% 50%;
+.info-container p a:hover::after {
+  width: 100%;
 }
 
 .line {
   width: 1500px;
   color: #000;
   position: relative;
-  left: 15%;
+  left: 10%;
   top: 130px;
 }
 
 /* Dark mode */
 .dark-mode .section-bienvenida {
-  background: #000;
+  background-image: url("/assets/img/background-figuras-negro.png");
   border-bottom-color: #fff;
   height: 920px;
 }
@@ -1004,4 +1046,64 @@ input:checked + .slider:before {
 
 .dark-mode .section-contacto {
   background: #000;
+}
+
+/* RESPONSIVE DE CELULAR */
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 50px;
+    right: 150px;
+  }
+  .redes-container {
+    position: relative;
+    left: 190px;
+  }
+  .section-bienvenida {
+    width: 320px;
+    height: 550px;
+    background-color: #d20901;
+    background-image: none;
+  }
+  #app {
+    position: relative;
+    right: 120px;
+    top: 90px;
+  }
+  .title-inner {
+    width: 230px;
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .section-sobremi {
+    /* cambiar a las bolas */
+    background-image: none;
+    position: relative;
+    
+  }
+  .container-sobremi h2 {
+    position: relative;
+    bottom: 140px;
+    font-size: 40px;
+  }
+  .sobremi-1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .sobremi-1 p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    word-spacing: 0px;
+    font-size: 15px;
+    bottom: 160px;
+  }
+}
+
+/* RESPONSIVE TABLETS */
+@media only screen and (min-width: 601px) and (max-width: 1080px) {
+  /* Agrega tus estilos específicos para pantallas medianas aquí */
 }
