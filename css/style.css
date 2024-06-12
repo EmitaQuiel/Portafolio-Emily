@@ -319,12 +319,16 @@ input:checked + .slider:before {
   margin-top: 30px;
   font-size: 25px;
   text-align: center;
-  right: 300px;
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  word-spacing: 20px;
+  word-spacing: 10px;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  left: 10%;
+  margin-top: 5%;
 }
 
 .container-sobremi h2 {
@@ -1050,6 +1054,7 @@ input:checked + .slider:before {
 
 /* RESPONSIVE DE CELULAR */
 @media only screen and (max-width: 600px) {
+
   .logo img {
     width: 50px;
     right: 150px;
@@ -1077,30 +1082,70 @@ input:checked + .slider:before {
   }
 
   .section-sobremi {
-    /* cambiar a las bolas */
     background-image: none;
+  }
+  .container-sobremi {
     position: relative;
-    
+    bottom: 18%;
   }
   .container-sobremi h2 {
-    position: relative;
-    bottom: 140px;
     font-size: 40px;
   }
-  .sobremi-1{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
   .sobremi-1 p {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    word-spacing: 0px;
-    font-size: 15px;
-    bottom: 160px;
+    font-size: 16px;
   }
+  .tecnologias-icon {
+    width: 20%;
+    position: relative;
+    left: 10%;
+    bottom: 40px;
+  }
+  .tecnologias-icon img {
+    width: 28px;
+    height: 28px;
+  }
+  .tecnologias-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .icon-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .section-educacion {
+    width: 50%;
+  }
+  .blog-slider{
+    width: 50%;
+  }
+  /* .blog-slider {
+    width: 40%;
+    position: relative;
+    right: 70%;
+    margin-bottom: 30%;
+  }
+  .blog-slider__content {
+    width: 50%;
+    height: 500px;
+  }
+  .blog-slider__code {
+    font-size: 12px;
+  }
+  .blog-slider__img {
+    width: 10%;
+    height: 10%;
+  }
+  .blog-slider__title{
+    font-size: 20px;
+  }
+  .blog-slider__title_small{
+    font-size: 15px;
+  }
+  .blog-slider__text{
+    font-size: 10px;
+  } */
 }
 
 /* RESPONSIVE TABLETS */
