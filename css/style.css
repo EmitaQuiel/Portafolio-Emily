@@ -1064,7 +1064,7 @@ input:checked + .slider:before {
     left: 190px;
   }
   .section-bienvenida {
-    width: 320px;
+    width: 375px;
     height: 550px;
     background-color: #d20901;
     background-image: none;
@@ -1117,9 +1117,22 @@ input:checked + .slider:before {
   .section-educacion {
     width: 50%;
   }
-  .blog-slider{
-    width: 50%;
+  .section-proyecto{
+    margin-top: 300px;
   }
+  .cta{
+    width: 30%;
+    height: 20%;
+  }
+  .cta__text-column h2{
+    font-size: 10px;
+  }
+  .cta__text-column p{
+    font-size: 10px;
+  }
+  /* .blog-slider{
+    width: 50%;
+  } */
   /* .blog-slider {
     width: 40%;
     position: relative;
