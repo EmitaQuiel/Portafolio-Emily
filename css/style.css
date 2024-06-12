@@ -1114,9 +1114,6 @@ input:checked + .slider:before {
     justify-content: space-between;
     gap: 10px;
   }
-  .section-educacion {
-    width: 50%;
-  }
   .section-proyecto{
     position: relative;
     top: 30%;
@@ -1146,10 +1143,10 @@ input:checked + .slider:before {
 
 
   
-  /* .blog-slider{
+   .blog-slider{
     width: 50%;
-  } */
-  /* .blog-slider {
+  } 
+   .blog-slider {
     width: 40%;
     position: relative;
     right: 70%;
@@ -1174,7 +1171,7 @@ input:checked + .slider:before {
   }
   .blog-slider__text{
     font-size: 10px;
-  } */
+  } 
 }
 
 /* RESPONSIVE TABLETS */
