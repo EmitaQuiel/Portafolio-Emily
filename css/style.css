@@ -1202,15 +1202,17 @@ input:checked+.slider:before {
 /* RESPONSIVE DE CELULAR */
 @media only screen and (max-width: 600px) {
   body{
-    overflow-x: hidden;
+    
   }
 
   main {
     scroll-snap-type: none;
+    overflow-x: hidden;
   }
 
   section {
-    height: 811px;
+    position: relative;
+    height: 100%;
     scroll-snap-align: none;
   }
 
@@ -1260,7 +1262,6 @@ input:checked+.slider:before {
 
   .section-sobremi {
     background-image: none;
-    height: 812px;
   }
 
   .container-sobremi h2 {
@@ -1324,6 +1325,10 @@ input:checked+.slider:before {
     font-size: 10px;
   }
 
+  .section-proyecto{
+    margin: 0;
+    padding: 0;
+  }
   .titulo_proyectos {
     font-size: 40px;
     position: relative;
@@ -1342,7 +1347,6 @@ input:checked+.slider:before {
     position: relative;
     right: 77%;
     margin-bottom: 30%;
-    top: 90px;
   }
 
   .blog-slider__content {
@@ -1370,12 +1374,18 @@ input:checked+.slider:before {
   .blog-slider__text {
     width: 100%;
     font-size: 10px;
-
   }
 
   .section-contacto {
     position: relative;
-    top: 600px;
+    top: 500px;
+    height: 815px;
+  }
+  .line{
+    display: none;
+  }
+  #lottie-animation{
+    display: none;
   }
 }
 
