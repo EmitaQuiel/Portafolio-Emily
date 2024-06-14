@@ -1369,7 +1369,6 @@ input:checked + .slider:before {
   }
   .section-contacto {
     position: relative;
-    
     height: 815px;
   }
   .line {
@@ -1391,6 +1390,23 @@ input:checked + .slider:before {
   }
   .dark-mode .section-sobremi {
     background-image: none;
+  }
+}
+
+@media (max-width: 435px) {
+  .section-bienvenida {
+    width: 435px;
+  }
+  .redes-container {
+    right: 1470px;
+  }
+  .container-educacion h2 {
+    font-size: 25px;
+    position: relative;
+    right: 750px;
+  }
+  .blog-slider {
+    right: 75%;
   }
 }
 
