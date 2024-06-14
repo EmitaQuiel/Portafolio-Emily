@@ -1393,7 +1393,7 @@ input:checked + .slider:before {
   }
 }
 
-@media (max-width: 435px) {
+@media only screen and (max-width: 435px){
   .section-bienvenida {
     width: 435px;
   }
