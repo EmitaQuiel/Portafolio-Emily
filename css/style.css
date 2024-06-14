@@ -1195,7 +1195,6 @@ input:checked + .slider:before {
 
 /* RESPONSIVE DE CELULAR */
 @media only screen and (max-width: 600px) {
-  
   main {
     scroll-snap-type: none;
     overflow-x: hidden;
@@ -1393,7 +1392,7 @@ input:checked + .slider:before {
   }
 }
 
-@media only screen and (max-width: 435px){
+@media only screen and (min-width: 435px){
   .section-bienvenida {
     width: 435px;
   }
