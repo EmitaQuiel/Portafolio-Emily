@@ -355,6 +355,18 @@ input:checked + .slider:before {
   height: 48px;
 }
 
+.tecnologias-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 /* Inicio de seccion de educacion */
 .section-educacion {
   width: 100%;
@@ -1392,7 +1404,7 @@ input:checked + .slider:before {
   }
 }
 
-@media only screen and (min-width: 435px){
+/* @media(max-width: 435px){
   .section-bienvenida {
     width: 435px;
   }
@@ -1407,7 +1419,7 @@ input:checked + .slider:before {
   .blog-slider {
     right: 75%;
   }
-}
+}  */
 
 /* RESPONSIVE TABLETS */
 @media only screen and (min-width: 601px) and (max-width: 1080px) {
