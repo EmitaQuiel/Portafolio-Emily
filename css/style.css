@@ -1394,6 +1394,55 @@ input:checked + .slider:before {
     display: none;
   }
 
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+    padding: 10px;
+  }
+
+  .descripcion-proyecto {
+    width: 100%;
+    left: 5px;
+  }
+
+  .imagen-contenedor h2 {
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+  }
+
+  .descripcion-proyecto p {
+    position: relative;
+    font-size: 10px;
+    top: 180px;
+  }
+
+  .inline-block {
+    position: relative;
+    left: 300px;
+  }
+
+  .imagen-contenedor img {
+    position: relative;
+    right: 14px;
+  }
+
+  .modal-content img {
+    position: relative;
+    bottom: 20px;
+    border-radius: 15px;
+    left: 75px;
+  }
+
+  .linea-separadora-vertical {
+    display: none;
+  }
+
+  .flex-container li,
+  .flex-container p {
+    font-size: 10px;
+  }
+
   .dark-mode .section-bienvenida {
     background-image: none;
     background-color: #000;
