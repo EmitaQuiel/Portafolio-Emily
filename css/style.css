@@ -1423,10 +1423,10 @@ input:checked + .slider:before {
     left: 300px;
   }
 
-.close{
-  position: relative;
-  left: 13px;
-}
+  .close {
+    position: relative;
+    left: 13px;
+  }
 
   .modal-content img {
     position: relative;
@@ -1474,5 +1474,169 @@ input:checked + .slider:before {
 
 /* RESPONSIVE TABLETS */
 @media only screen and (min-width: 601px) and (max-width: 1080px) {
-  /* Agrega tus estilos específicos para pantallas medianas aquí */
+  main {
+    scroll-snap-type: none;
+    overflow-x: hidden;
+  }
+
+  section {
+    position: relative;
+    height: 100%;
+    scroll-snap-align: none;
+  }
+
+  #circle-container {
+    display: none;
+  }
+
+  .logo img {
+    width: 70px;
+    right: 30px;
+    bottom: 10px;
+    position: relative;
+  }
+
+  .redes-container {
+    position: relative;
+    right: 1110px;
+    top: 30px;
+  }
+
+  .switch {
+    position: relative;
+    width: 30%;
+    left: 1700px;
+  }
+
+  .section-bienvenida {
+    width: 820px;
+    height: 850px;
+    background-color: #d20901;
+    background-image: none;
+  }
+  #app {
+    position: relative;
+    right: 190px;
+    top: 90px;
+  }
+  .title {
+    font-size: 90px;
+  }
+  .section-sobremi {
+    background-image: none;
+    margin-top: 10px;
+  }
+  .section-sobremi h2 {
+    font-size: 45px;
+  }
+  .section-proyecto {
+    height: 1100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cards-container-proyectos {
+    position: relative;
+    left: 5%;
+  }
+
+  .titulo_proyectos {
+    font-size: 40px;
+    position: relative;
+  }
+
+  .container-educacion h2 {
+    font-size: 45px;
+    position: relative;
+    right: 550px;
+  }
+
+  .blog-slider__pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 25px;
+  }
+  .blog-slider {
+    width: 55%;
+    height: 30%;
+    position: relative;
+    right: 55%;
+  }
+  .blog-slider__content {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    top: 80px;
+  }
+
+  .blog-slider__code {
+    font-size: 17px;
+  }
+
+  .blog-slider__img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .blog-slider__title {
+    font-size: 20px;
+  }
+
+  .blog-slider__title_small {
+    font-size: 17px;
+  }
+
+  .blog-slider__text {
+    width: 120%;
+    font-size: 15px;
+    position: relative;
+  }
+  .section-proyecto {
+    height: 1900px;
+    margin: 40px;
+  }
+  .titulo_proyectos {
+    font-size: 45px;
+  }
+  .cards-container-proyectos {
+    position: relative;
+  }
+  .section-contacto {
+    width: 100%;
+  }
+  .info-container {
+    position: relative;
+    right: 60px;
+  }
+  .info-container p a {
+    margin: 10px 5px;
+  }
+  .info-contacto-1 p,
+  .info-contacto-2 p {
+    font-size: 10px;
+  }
+  .line {
+    display: none;
+  }
+  .download-btn {
+    position: relative;
+    right: 780px;
+  }
+  #lottie-animation {
+    display: none;
+  }
+
+  .info-container p a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+  }
+
+  .dark-mode .section-bienvenida {
+    background-image: none;
+    background-color: #000;
+    height: 850px;
+  }
+  .dark-mode .section-sobremi {
+    background-image: none;
+  }
 }
