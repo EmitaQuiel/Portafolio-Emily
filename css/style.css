@@ -1423,16 +1423,17 @@ input:checked + .slider:before {
     left: 300px;
   }
 
-  .imagen-contenedor img {
-    position: relative;
-    right: 14px;
-  }
+.close{
+  position: relative;
+  left: 13px;
+}
 
   .modal-content img {
     position: relative;
     bottom: 20px;
     border-radius: 15px;
-    left: 75px;
+    left: 5px;
+    width: 300px;
   }
 
   .linea-separadora-vertical {
