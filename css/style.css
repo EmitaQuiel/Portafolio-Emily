@@ -1398,6 +1398,7 @@ input:checked + .slider:before {
     width: 90%;
     margin: 10% auto;
     padding: 10px;
+    overflow-x: hidden;
   }
 
   .descripcion-proyecto {
