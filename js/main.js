@@ -11,30 +11,8 @@ darkModeSwitch.addEventListener("change", () => {
 });
 
 const sections = document.querySelectorAll("section");
-const circleContainer = document.getElementById("circle-container");
-let scrollTimeout;
-
-sections.forEach((section, index) => {
-  const circle = document.createElement("div");
-  circle.classList.add("circle");
-  circleContainer.appendChild(circle);
-
-  circle.addEventListener("click", () => {
-    section.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
 const main = document.querySelector("main");
-main.addEventListener("scroll", () => {
-  if (scrollTimeout) {
-    clearTimeout(scrollTimeout);
-  }
 
-  scrollTimeout = setTimeout(() => {
-    const currentSectionIndex = getCurrentSectionIndex();
-    updateCircle(currentSectionIndex);
-  }, 100);
-});
 
 function getCurrentSectionIndex() {
   let currentIndex = 0;
@@ -52,20 +30,6 @@ function getCurrentSectionIndex() {
 
   return currentIndex;
 }
-
-function updateCircle(index) {
-  const circles = document.querySelectorAll(".circle");
-  circles.forEach((circle, i) => {
-    if (i === index) {
-      circle.classList.add("fill");
-    } else {
-      circle.classList.remove("fill");
-    }
-  });
-}
-
-updateCircle(getCurrentSectionIndex());
-
 
 var swiper = new Swiper(".blog-slider", {
   spaceBetween: 30,
@@ -242,10 +206,10 @@ window.onclick = function (event) {
 };
 
 lottie.loadAnimation({
-  container: document.getElementById("lottie-animation"), // el elemento DOM que contendrá la animación
+  container: document.getElementById("lottie-animation"), 
   renderer: "svg",
   loop: true,
   autoplay: true,
-  path: "/assets/img/Animation - 1717634476296.json", // la ruta al archivo JSON de la animación
+  path: "/assets/img/Animation - 1717634476296.json", 
 });
 
