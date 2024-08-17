@@ -37,12 +37,17 @@ section {
 }
 
 .redes-container {
-  position: relative;
-  top: 90px;
+  position: absolute;
+  right: 0;
+  top: 8%;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-right: 2%;
 }
 
 .logo img {
-  position: fixed;
+  position: absolute;
   width: 70px;
   margin: 0 80px;
   top: 50px;
@@ -53,12 +58,9 @@ section {
 .switch {
   font-size: 17px;
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 3.5em;
   height: 2em;
-
-  left: 1700px;
-  bottom: 43px;
 }
 
 .switch input {
@@ -112,9 +114,6 @@ input:checked + .slider:before {
 }
 
 .section-bienvenida nav a i {
-  position: relative;
-  left: 1700px;
-  bottom: 30px;
   cursor: pointer;
   margin: 10px;
 }
@@ -195,7 +194,9 @@ input:checked + .slider:before {
   animation: inner-left 1s 1s ease both,
     text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
-
+.mozart-inner h3 {
+  font-size: 70px;
+}
 .mozart-inner {
   animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
@@ -547,9 +548,10 @@ input:checked + .slider:before {
 
 .modal-content img {
   width: 55%;
-  position: relative;
-  left: 440px;
   border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-content h2 {
@@ -939,6 +941,10 @@ input:checked + .slider:before {
 
 /* RESPONSIVE DE CELULAR */
 @media only screen and (max-width: 600px) {
+  .mozart-inner h3 {
+    font-size: 15px;
+  }
+
   .logo img {
     width: 50px;
     right: 60px;
@@ -946,21 +952,12 @@ input:checked + .slider:before {
     position: relative;
   }
 
-  .redes-container {
-    position: relative;
-    right: 1510px;
-    top: 30px;
-  }
-
   .switch {
-    position: relative;
     width: 40%;
-    left: 1810px;
-    bottom: 72px;
   }
 
   .section-bienvenida {
-    width: 375px;
+    width: 100%px;
     height: 550px;
     background-color: #d20901;
     background-image: none;
@@ -1041,12 +1038,9 @@ input:checked + .slider:before {
   .cta__text-column p {
     font-size: 10px;
   }
-
-  .cta__text-column a {
-    width: 90%;
-    font-size: 9px;
+  .cta img {
+    height: 150px;
   }
-
   .titulo_proyectos {
     font-size: 40px;
     position: relative;
@@ -1152,36 +1146,18 @@ input:checked + .slider:before {
 
 /* RESPONSIVE TABLETS */
 @media only screen and (min-width: 601px) and (max-width: 1080px) {
-  .logo img {
-    width: 70px;
-    right: 30px;
-    bottom: 10px;
-    position: relative;
-  }
-
-  .redes-container {
-    position: relative;
-    right: 1130px;
-    top: 30px;
-  }
-
-  .switch {
-    position: relative;
-    width: 30%;
-    left: 1700px;
-  }
   .section-bienvenida {
     background-color: #d20901;
     background-image: none;
   }
   #app {
     position: relative;
-    right: 250px;
     top: 90px;
   }
   .title {
-    font-size: 90px;
+    font-size: 80px;
   }
+
   .section-sobremi {
     background-image: none;
     margin-top: 10px;
@@ -1189,7 +1165,9 @@ input:checked + .slider:before {
   .section-sobremi h2 {
     font-size: 45px;
   }
-
+  .mozart-inner h3 {
+    font-size: 30px;
+  }
   .titulo_proyectos {
     font-size: 40px;
     position: relative;
@@ -1201,13 +1179,18 @@ input:checked + .slider:before {
     gap: 1rem;
   }
   .cards-container-proyectos {
-    position: relative;
-    left: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta{
+    margin-top: 5%;
   }
   .card-educacion {
     width: 11rem;
     height: 10rem;
     border-radius: 5px;
+    
   }
   .card-educacion h2 {
     font-size: 11px;
@@ -1257,8 +1240,6 @@ input:checked + .slider:before {
     width: 100%;
   }
   .modal-content img {
-    position: relative;
-    left: 5%;
     width: 600px;
   }
   .linea-separadora-vertical {
@@ -1303,8 +1284,4 @@ input:checked + .slider:before {
   .dark-mode .section-sobremi {
     background-image: none;
   }
-}
-@media (min-width: 1024px) and (max-width: 1279px) {
-  
-  
 }
