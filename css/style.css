@@ -327,7 +327,7 @@ input:checked + .slider:before {
 }
 .card-educacion img {
   position: absolute;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
   top: 0;
@@ -335,6 +335,7 @@ input:checked + .slider:before {
   opacity: 0.9;
   transition: opacity 0.2s ease-out;
 }
+
 .card-educacion h2 {
   position: absolute;
   inset: auto auto 30px 30px;
@@ -417,11 +418,12 @@ input:checked + .slider:before {
 }
 
 .cards-container-proyectos {
-  margin-left: 80px;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   gap: 2rem;
   flex-wrap: wrap;
+  
 }
 
 .cta {
@@ -944,18 +946,12 @@ input:checked + .slider:before {
   .mozart-inner h3 {
     font-size: 15px;
   }
-
   .logo img {
     width: 50px;
     right: 60px;
     bottom: 10px;
     position: relative;
   }
-
-  .switch {
-    width: 40%;
-  }
-
   .section-bienvenida {
     width: 100%px;
     height: 550px;
@@ -995,24 +991,25 @@ input:checked + .slider:before {
     gap: 1rem;
   }
   .card-educacion {
-    width: 6rem;
+    width: 7rem;
     height: 10rem;
     border-radius: 5px;
   }
+  
   .card-educacion h2 {
+    inset: auto auto 10px 10px;
     font-size: 10px;
-    text-align: left;
   }
   .card-educacion a {
     font-size: 5px;
   }
   .card-educacion a {
-    inset: auto auto 20px 30px;
+    inset: auto auto 20px 10px;
     color: inherit;
     text-decoration: none;
   }
   .card-educacion:hover h2 {
-    inset: auto auto 50px 30px;
+    inset: auto auto 50px 10px;
     transition: inset 0.3s ease-out;
   }
   .container-educacion h2 {
@@ -1020,12 +1017,11 @@ input:checked + .slider:before {
     position: relative;
     right: 550px;
   }
-
-  .cards-container-proyectos {
-    position: relative;
-    right: 5%;
+  .card-educacion img {
+    width: 100%; 
+    height: auto;
+    transition: opacity 0.2s ease-out;
   }
-
   .cta {
     width: 90%;
     height: 300px;
