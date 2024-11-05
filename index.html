@@ -43,7 +43,7 @@
           </label>
           <a href="https://github.com/EmitaQuiel" target="_blank"><i class="fa-brands fa-github"
               style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i></a>
-          <a href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"><i
+          <a href="www.linkedin.com/in/emily-castillo-quiel-b1a34b268" target="_blank"><i
               class="fa-brands fa-linkedin"
               style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);">
             </i>
@@ -87,7 +87,6 @@
             <p>
               Me llamo Emily Castillo Quiel y soy Ingeniera de Sistemas con especialización en desarrollo de software, además de contar con experiencia en varias áreas de la ingeniería informática. Tengo habilidades sólidas en desarrollo de software, bases de datos, ciberseguridad y administración de sistemas. Mi principal enfoque es la innovación y la eficiencia, y me dedico a aplicar las tendencias tecnológicas más recientes y las mejores prácticas en proyectos concretos. 
             </p>
-          </div>
           </div>
         </div>
   
@@ -177,87 +176,254 @@
     </section>
 
     <!-- Contenedor de mis proyectos -->
-    <section class="section-proyecto" id="section">
-      <h2 class="titulo_proyectos">Proyectos</h2>
+      <form id="filterForm" method="post">
+        <div class="filterbody">
+          <div class="filtertabs">
+            <section class="section-proyecto" id="section">
+              <h2 class="titulo_proyectos">Proyectos</h2>
+    
+              <div class="filter-container">
+                <input type="radio" id="todos" name="tecnologia" value="" class="filter-radio" checked />
+                <label for="todos" class="filter-label">Todos</label>
+                
+                <input type="radio" id="csharp" name="tecnologia" value="CSharp" class="filter-radio" />
+                <label for="csharp" class="filter-label">C#</label>
+                
+                <input type="radio" id="java" name="tecnologia" value="Java" class="filter-radio" />
+                <label for="java" class="filter-label">Java</label>
+                
+                <input type="radio" id="desarrolloWeb" name="tecnologia" value="DesarrolloWeb" class="filter-radio" />
+                <label for="desarrolloWeb" class="filter-label">Desarrollo Web</label>
+                
+                <input type="radio" id="mysql" name="tecnologia" value="MySQL" class="filter-radio" />
+                <label for="mysql" class="filter-label">MySQL</label>
+                
+                <input type="radio" id="wordpress" name="tecnologia" value="WordPress" class="filter-radio" />
+                <label for="wordpress" class="filter-label">WordPress</label>
+              </div>
+
+              <div class="cards-container-proyectos">
+                <!-- Proyecto Estudiantil en C# -->
+                <article class="cta" data-modal-target="#modalProyectoEstudiantil" data-tecnologia="CSharp">
+                  <img src='./assets/img/img_ProyectoEstudiantil/Menu_Principal.png' alt='Proyecto Estudiantil'>
+                  <div class="cta__text-column">
+                    <h2>Proyecto Estudiantil</h2>
+                    <p>Desarrollo de un sistema de matrícula en C#.</p>
+                    <a href="modalProyectoEstudiantil" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+    
+                <!-- Proyecto Poko Palace en Java -->
+                <article class="cta" data-modal-target="#modalPokoPalace" data-tecnologia="Java">
+                  <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt='Poko Palace'>
+                  <div class="cta__text-column">
+                    <h2>E-commerce Poko Palace</h2>
+                    <p>Desarrollo de un e-commerce de venta de figuras y más.</p>
+                    <a href="modalPokoPalace" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+    
+                <!-- E-commerce TCG Pokémon en Desarrollo Web -->
+                <article class="cta" data-modal-target="#modalTCGPokemon" data-tecnologia="DesarrolloWeb">
+                  <img src='./assets/img/Cards&Games/Inicio.jpg' alt='E-commerce TCG Pokémon'>
+                  <div class="cta__text-column">
+                    <h2>E-commerce TCG Pokémon</h2>
+                    <p>Desarrollo de un e-commerce de TCG Pokémon.</p>
+                    <a href="" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+    
+                <!-- Sistema de Ventas en C# -->
+                <article class="cta" data-modal-target="#modalSistemaVentas" data-tecnologia="CSharp">
+                  <img src='./assets/img/Sistema de Ventas/Inicio.jpg' alt='Sistema de Ventas'>
+                  <div class="cta__text-column">
+                    <h2>Sistema de Ventas</h2>
+                    <p>Sistema de ventas en C# con diversas funcionalidades.</p>
+                    <a href="modalSistemaVentas" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+    
+                <!-- Base de Datos Pokémon en MySQL -->
+                <article class="cta" data-modal-target="#modalMysql" data-tecnologia="MySQL">
+                  <img src='./assets/img/Mysql.png' alt='Base de Datos Pokémon'>
+                  <div class="cta__text-column">
+                    <h2>Base de Datos Pokémon</h2>
+                    <p>Desarrollo de una base de datos de Pokémon en MySQL.</p>
+                    <a href="modalMysql" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+    
+                <!-- Heladería Milu en WordPress -->
+                <article class="cta" data-modal-target="#modalMilu" data-tecnologia="WordPress">
+                  <img src='./assets/img/Proyecto Heladeria Milu/Pagina principal.jpg' alt='Heladería Milu'>
+                  <div class="cta__text-column">
+                    <h2>Heladería Milu</h2>
+                    <p>Página informativa para la heladería Milu en WordPress.</p>
+                    <a href="modalMilu" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+    
+                <!-- Sistema EcoAbaca en C# -->
+                <article class="cta" data-modal-target="#modalEcoAbaca" data-tecnologia="CSharp">
+                  <img src='./assets/img/ProyectoEcoAbaca/InicioPantalla.jpg' alt='Sistema EcoAbaca'>
+                  <div class="cta__text-column">
+                    <h2>Sistema EcoAbaca</h2>
+                    <p>Desarrollo de un sistema de mantenimiento en C#.</p>
+                    <a href="" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+    
+                <!-- Cafetería SweetMatcha en WordPress -->
+                <article class="cta" data-modal-target="#modalSweetMatcha" data-tecnologia="WordPress">
+                  <img src='./assets/img/Proyecto SweetMatcha/InicioSweetMatcha.jpg' alt='Cafetería SweetMatcha'>
+                  <div class="cta__text-column">
+                    <h2>Cafetería SweetMatcha</h2>
+                    <p>Página informativa para la cafetería SweetMatcha en WordPress.</p>
+                    <a href="" class="openModalButton">Ver Más</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        
+      </form>
+
+    <div id="modalSweetMatcha" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+        <img class="imagen-principal-proyectos" src="./assets/img/Proyecto SweetMatcha/SweetMatcha.png" alt="">
+
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">Informativa</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2024</p>
+                  </li>
+              </ul>
+          </div>
       
-      <div class="cards-container-proyectos">
-        <article class="cta" data-modal-target="#modalProyectoEstudiantil">
-          <img src='./assets/img/img_ProyectoEstudiantil/Menu_Principal.png' alt='Bluetit'>
-          <div class="cta__text-column">
-            <h2>Proyecto Estudiantil</h2>
-            <p>El proyecto consiste en el desarrollo de un sistema de matrícula estudiantil.</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El proyecto consiste en el desarrollo de una pagina informativa utilizando WordPress, Blocksy, Modula y Gutenkit que que se encargo en mostrar informacion importante de la tienda tales como su horario, los servicios que ofrecen, ademas una amplia galeria que muestra productos que han vendido.
+              </p>
           </div>
-        </article>
-
-        <article class="cta" data-modal-target="#modalPokoPalace">
-          <img src='./assets/img/img_Poko_Palace/Pagina_Principal.jpg' alt='Small blue-grey yellow-breasted bird'>
-          <div class="cta__text-column">
-            <h2>E-commerce Poko Palace</h2>
-            <p>El proyecto consiste en el desarrollo de un e-commerce de venta de figuras y mas.</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
+      
+        </div>
+      
+        <div>
+          <div class="contenedor-imagenes-proyectos">
+            <div class="imagen-contenedor">
+              <h2>Pagina</h2>
+              <img src="./assets/img/Proyecto SweetMatcha/SweetMatcha-Principal.png" alt="">
+            </div>
           </div>
-        </article>
-
-        <article class="cta" data-modal-target="#modalTCGPokemon">
-          <img src='./assets/img/Cards&Games/Inicio.jpg' alt='Small blue-grey yellow-breasted bird'>
-          <div class="cta__text-column">
-            <h2>E-commerce TCG Pokemon</h2>
-            <p>
-              El proyecto consiste en el desarrollo de un e-commerce de TCG Pokémon.</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-          </div>
-        </article>
-
-        <article class="cta" data-modal-target="#modalSistemaVentas">
-          <img src='./assets/img/Sistema de Ventas/Inicio.jpg' alt='Small blue-grey yellow-breasted bird'>
-          <div class="cta__text-column">
-            <h2>Sistema de Ventas</h2>
-            <p>Sistema de ventas de escritorio con distintas funcionalidades.</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-          </div>
-        </article>
-
-        <article class="cta" data-modal-target="#modalMysql">
-          <img src='./assets/img/Mysql.png' alt='Small blue-grey yellow-breasted bird'>
-          <div class="cta__text-column">
-            <h2>Base de Datos Pokemon</h2>
-            <p>El proyecto consiste en el desarrollo de una base de datos de Pokémon.</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-          </div>
-        </article>
-
-        <article class="cta" data-modal-target="#modalMilu">
-          <img src='./assets/img/Proyecto Heladeria Milu/Pagina principal.jpg' alt='Bluetit'>
-          <div class="cta__text-column">
-            <h2>Heladeria Milu</h2>
-            <p>El proyecto consiste en el desarrollo de una pagina informativa de la heladeria Milu.</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" class="openModalButton">Ver Más</a>
-          </div>
-        </article>
+        </div>
+        
       </div>
-    </section>
+    </div>
+
+    <div id="modalEcoAbaca" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+        <img class="imagen-principal-proyectos" src="./assets/img/ProyectoEcoAbaca/SistemaEcoabaca.png" alt="">
+
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">Informativa</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2024</p>
+                  </li>
+              </ul>
+          </div>
+      
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El proyecto consiste en el desarrollo de un sistema de mantenimiento de facturas, empleados y agricultores utilizando .NET, HTML, CSS, SQL Server, C# y Entity Framework, que facilita la gestión administrativa de una empresa de venta de Abaca. El sistema permite llevar un registro detallado de los empleados, los agricultores que envían fibra, y las facturas que se les realizan. Además, incluye funcionalidades para crear, leer, actualizar y eliminar información de agricultores, empleados y facturas, así como la capacidad de generar y consultar las mismas.
+
+              </p>
+          </div>
+      
+        </div>
+      
+        <div>
+          <div class="contenedor-imagenes-proyectos">
+            <div class="imagen-contenedor">
+              <h2>Inicio de Sesion</h2>
+              <img src="./assets/img/ProyectoEcoAbaca/InicioSesion.jpg" alt="">
+            </div>
+            <div class="imagen-contenedor">
+              <h2>Pagina Principal</h2>
+              <img src="./assets/img/ProyectoEcoAbaca/InicioPantalla.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
     <div id="modalProyectoEstudiantil" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
         <img class="imagen-principal-proyectos" src="./assets/img/img_ProyectoEstudiantil/Principal-Proyecto-Estudiantil.png" alt="">
-        <hr class="linea-separadora">
-        <ul>
-          <div class="flex-container">
-            <li class="inline-block">Categoría</li>
-            <p class="inline-block">Ecommerce</p>
+
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">Mantenimiento</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2023</p>
+                  </li>
+              </ul>
           </div>
-          <div class="flex-container">
-            <li class="inline-block">Año </li>
-            <p class="inline-block">2023</p>
+      
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El proyecto consiste en el desarrollo de un sistema de matrícula estudiantil utilizando phpMyAdmin, XAMPP, MySQL, C# y Guna Framework, que facilita la gestión administrativa de una institución educativa. El sistema permite llevar un registro detallado de los estudiantes, los cursos en los que se matriculan y los montos pagados. Además, incluye funcionalidades para crear, leer, actualizar y eliminar información de alumnos, así como la capacidad de generar y consultar historiales académicos.
+              </p>
           </div>
-          <hr class="linea-separadora-vertical">
-        </ul>
-        <div class="descripcion-proyecto">
-          <p>El proyecto consiste en el desarrollo de un sistema de matrícula estudiantil utilizando phpMyAdmin, XAMPP, MySQL, C# y Guna Framework, que facilita la gestión administrativa de una institución educativa. El sistema permite llevar un registro detallado de los estudiantes, los cursos en los que se matriculan y los montos pagados. Además, incluye funcionalidades para crear, leer, actualizar y eliminar información de alumnos, así como la capacidad de generar y consultar historiales académicos.</p>
         </div>
-        
+
         <div class="contenedor-imagenes-proyectos">
           <div class="imagen-contenedor">
             <h2>Menu Principal</h2>
@@ -299,21 +465,36 @@
         <span class="close">&times;</span>
         <img class="imagen-principal-proyectos" src='./assets/img/img_Poko_Palace/Principal-Poko-Palace.png' alt="">
         
-        <hr class="linea-separadora">
-        <ul>
-          <div class="flex-container">
-            <li class="inline-block">Categoría</li>
-            <p class="inline-block">Ecommerce</p>
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">E-commerce</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2023</p>
+                  </li>
+              </ul>
           </div>
-          <div class="flex-container">
-            <li class="inline-block">Año </li>
-            <p class="inline-block">2023</p>
+      
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El proyecto consiste en el desarrollo de un e-commerce utilizando JSP, Java, JavaScript, Bootstrap, Tailwind CSS y MySQL Workbench, que permite a los clientes comprar productos de manera eficiente y segura. La aplicación incluye una página principal, un apartado de productos, un carrito de compras, un formulario para los datos de los clientes y un resumen de compra. Además, los clientes pueden registrarse e iniciar sesión para ver su historial de compras.
+              </p>
           </div>
-          <hr class="linea-separadora-vertical">
-        </ul>
-        <div class="descripcion-proyecto">
-          <p>El proyecto consiste en el desarrollo de un e-commerce utilizando JSP, Java, JavaScript, Bootstrap, Tailwind CSS y MySQL Workbench, que permite a los clientes comprar productos de manera eficiente y segura. La aplicación incluye una página principal, un apartado de productos, un carrito de compras, un formulario para los datos de los clientes y un resumen de compra. Además, los clientes pueden registrarse e iniciar sesión para ver su historial de compras.</p>
         </div>
+
         <div class="contenedor-imagenes-proyectos">
           <div class="imagen-contenedor">
             <h2>Menu Principal</h2>
@@ -358,21 +539,36 @@
         <span class="close">&times;</span>
         <img class="imagen-principal-proyectos" src='./assets/img/Cards&Games/Cards-Games-Principal.png' alt="">
         
-        <hr class="linea-separadora">
-        <ul>
-          <div class="flex-container">
-            <li class="inline-block">Categoría</li>
-            <p class="inline-block">Ecommerce</p>
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">E-commerce</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2023</p>
+                  </li>
+              </ul>
           </div>
-          <div class="flex-container">
-            <li class="inline-block">Año </li>
-            <p class="inline-block">2023</p>
+      
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El proyecto consiste en el desarrollo de un ecommerce de TCG Pokémon utilizando JavaScript, CSS y HTML, con JSON para el almacenamiento de productos. La aplicación incluye una página principal, un apartado de productos, un carrito de compras y la funcionalidad para realizar la compra.
+              </p>
           </div>
-          <hr class="linea-separadora-vertical">
-        </ul>
-        <div class="descripcion-proyecto">
-          <p>El proyecto consiste en el desarrollo de un ecommerce de TCG Pokémon utilizando JavaScript, CSS y HTML, con JSON para el almacenamiento de productos. La aplicación incluye una página principal, un apartado de productos, un carrito de compras y la funcionalidad para realizar la compra.</p>
         </div>
+
         <div class="contenedor-imagenes-proyectos">
           <div class="imagen-contenedor">
             <h2>Pagina de Inicio</h2>
@@ -402,21 +598,37 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <img class="imagen-principal-proyectos" src='./assets/img/Sistema de Ventas/Principal-Sistema-Ventas.png' alt="">
-        <hr class="linea-separadora">
-        <ul>
-          <div class="flex-container">
-            <li class="inline-block">Categoría</li>
-            <p class="inline-block">Ecommerce</p>
+        
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">E-commerce</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2023</p>
+                  </li>
+              </ul>
           </div>
-          <div class="flex-container">
-            <li class="inline-block">Año </li>
-            <p class="inline-block">2023</p>
+      
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El sistema de ventas desarrollado en C# .NET Framework, Guna Framework y SQL Server permite a los usuarios iniciar sesión con roles diferenciados (administrador o empleado), ofreciendo funcionalidades específicas para cada uno. Los administradores tienen acceso completo al CRUD de usuarios, mantenimiento de categorías, productos y datos para facturación, registro y visualización detallada de ventas y compras, gestión de clientes y proveedores, y generación de informes. Por otro lado, los empleados pueden registrar ventas y compras, gestionar clientes y proveedores, así como generar informes limitados. La interfaz del sistema es intuitiva y eficiente, facilitando las operaciones diarias de venta y gestión empresarial.El empleado, dentro del sistema de ventas, tiene la capacidad de registrar ventas y compras, así como gestionar clientes y proveedores. Además, puede generar informes limitados sobre las ventas y compras realizadas.
+              </p>
           </div>
-          <hr class="linea-separadora-vertical">
-        </ul>
-        <div class="descripcion-proyecto">
-          <p>El sistema de ventas desarrollado en C# .NET Framework, Guna Framework y SQL Server permite a los usuarios iniciar sesión con roles diferenciados (administrador o empleado), ofreciendo funcionalidades específicas para cada uno. Los administradores tienen acceso completo al CRUD de usuarios, mantenimiento de categorías, productos y datos para facturación, registro y visualización detallada de ventas y compras, gestión de clientes y proveedores, y generación de informes. Por otro lado, los empleados pueden registrar ventas y compras, gestionar clientes y proveedores, así como generar informes limitados. La interfaz del sistema es intuitiva y eficiente, facilitando las operaciones diarias de venta y gestión empresarial.El empleado, dentro del sistema de ventas, tiene la capacidad de registrar ventas y compras, así como gestionar clientes y proveedores. Además, puede generar informes limitados sobre las ventas y compras realizadas.</p>
         </div>
+        
         <div class="contenedor-imagenes-proyectos">
           <div class="imagen-contenedor">
             <h2>Inicio</h2>
@@ -451,21 +663,36 @@
         <span class="close">&times;</span>
         <img class="imagen-principal-proyectos" src='./assets/img/Proyecto Base de datos/Principal-Base-Datos.png' alt="">
         
-        <hr class="linea-separadora">
-        <ul>
-          <div class="flex-container">
-            <li class="inline-block">Categoría</li>
-            <p class="inline-block">Ecommerce</p>
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">E-commerce</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2023</p>
+                  </li>
+              </ul>
           </div>
-          <div class="flex-container">
-            <li class="inline-block">Año </li>
-            <p class="inline-block">2023</p>
+      
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El proyecto consiste en el desarrollo de una base de datos de Pokémon en MySQL Workbench que incluye la creación de tablas, inserción de datos, vistas, funciones, procedimientos almacenados, triggers y tablas de registro (log). Además, se implementan controles de acceso a datos (DCL) y control de transacciones (TCL). El proyecto también abarca la elaboración de la documentación y un manual de instalación detallado.
+              </p>
           </div>
-          <hr class="linea-separadora-vertical">
-        </ul>
-        <div class="descripcion-proyecto">
-          <p>El proyecto consiste en el desarrollo de una base de datos de Pokémon en MySQL Workbench que incluye la creación de tablas, inserción de datos, vistas, funciones, procedimientos almacenados, triggers y tablas de registro (log). Además, se implementan controles de acceso a datos (DCL) y control de transacciones (TCL). El proyecto también abarca la elaboración de la documentación y un manual de instalación detallado.</p>
         </div>
+
         <div class="contenedor-imagenes-proyectos">
           <div class="imagen-contenedor">
             <h2>Diagrama Entidad Relacion</h2>
@@ -479,20 +706,35 @@
       <div class="modal-content">
           <span class="close">&times;</span>
         <img class="imagen-principal-proyectos" src="./assets/img/Proyecto Heladeria Milu/Principal.png" alt="">
-        <hr class="linea-separadora">
-        <ul>
-          <div class="flex-container">
-            <li class="inline-block">Categoría</li>
-            <p class="inline-block">Pagina Informativa</p>
+
+        <div style="display: flex; gap: 24px; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffd6d4; border-radius: 10px; box-shadow: 0px 4px 8px rgba(210, 9, 1, 1);">
+          <!-- Contenedor de información del proyecto -->
+          <div style="flex: 1; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Detalles del Proyecto</h3>
+              
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Categoría:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">Informativa</p>
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Link:</span>
+                      <p style="margin: 0;"><a target="_blank" href="https://github.com/EmitaQuiel/ProyectoAbaca" style="font-family: 'Inconsolata', monospace; color: #d20901; text-decoration: none;">Ver Proyecto</a></p>
+                  </li>
+                  <li style="display: flex; align-items: center;">
+                      <span style="font-family: 'Inconsolata', monospace; font-weight: bold; color: #555; width: 90px;">Año:</span>
+                      <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #333;">2024</p>
+                  </li>
+              </ul>
           </div>
-          <div class="flex-container">
-            <li class="inline-block">Año </li>
-            <p class="inline-block">2024</p>
+      
+          <!-- Contenedor de descripción del proyecto -->
+          <div style="flex: 2; padding: 16px; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-family: Nasi; font-size: 18px; color: #d20901; margin-bottom: 12px;">Descripción del Proyecto</h3>
+              <p style="font-family: 'Inconsolata', monospace; margin: 0; color: #555; line-height: 1.6;">
+                El proyecto consiste en el desarrollo de una pagina informativa utilizando WordPress, Blocksy, Modula y Gutenkit que que se encargo en mostrar informacion importante de la tienda tales como su horario, los servicios que ofrecen, ademas una amplia galeria que muestra productos que han vendido.
+              </p>
           </div>
-          <hr class="linea-separadora-vertical">
-        </ul>
-        <div class="descripcion-proyecto">
-          <p>El proyecto consiste en el desarrollo de una pagina informativa utilizando WordPress, Blocksy, Modula y Gutenkit que que se encargo en mostrar informacion importante de la tienda tales como su horario, los servicios que ofrecen, ademas una amplia galeria que muestra productos que han vendido.</p>
         </div>
         
         <div class="contenedor-imagenes-proyectos">
@@ -528,62 +770,53 @@
         <div class="info-container">
           <div class="info-contacto-1">
             <p>
-              <i class="fa-solid fa-envelope"
-                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+              <i class="fa-solid fa-envelope" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
               <a href="mailto:fernandacq05@gmail.com" class="underline">fernandacq05@gmail.com</a>
             </p>
-
             <p>
-              <i class="fa-brands fa-whatsapp"
-                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+              <i class="fa-brands fa-whatsapp" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
               <a href="https://wa.me/50671384893" class="underline">+506 7138-4893</a>
             </p>
-
           </div>
+    
           <div class="info-contacto-2">
-            <p><i class="fa-brands fa-linkedin"
-                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i><a
-                href="https://www.linkedin.com/in/emily-fernanda-castillo-quiel-b1a34b268/" target="_blank"
-                class="underline">LinkedIn</a></p>
-            <p><i class="fa-brands fa-github"
-                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+            <p>
+              <i class="fa-brands fa-linkedin" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+              <a href="https://www.linkedin.com/in/emily-castillo-quiel-b1a34b268" target="_blank" class="underline">LinkedIn</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-github" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
               <a href="https://github.com/EmitaQuiel" target="_blank" class="underline">GitHub</a>
             </p>
-            <p><i class="fa-brands fa-instagram"
-                style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);""></i><a href="
-                https://www.instagram.com/emily___0507?igsh=MTg3M3B4MWp5Z2ho&utm_source=qr" target="_blank"
-                class="underline">Instagram</a></p>
+            <p>
+              <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 30px; filter: drop-shadow(0 0 2px #fff);"></i>
+              <a href="https://www.instagram.com/emily___0507?igshid=MTg3M3B4MWp5Z2ho&utm_source=qr" target="_blank" class="underline">Instagram</a>
+            </p>
           </div>
-          <div id="lottie-animation" style="width: 500px; height: 500px; position: relative;
-      left: 50px;
-      top: 100px;">
-    </div>
-
-    <a href="./pdf/Emily Castillo Quiel - Ingeniera de Sistemas.pdf" download="CV - Emily Castillo Q.">
-      <button class="download-btn pixel-corners">
-        <div class="button-content">
-          <div class="svg-container">
-            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24">
-              <path
-                d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z">
-              </path>
-            </svg>
+    
+          <div id="lottie-animation" style="width: 500px; height: 500px; position: relative; left: 50px; top: 100px;">
           </div>
-          <div class="text-container">
-            <div class="text">Descargar CV</div>
-          </div>
-        </div>
-      </button>
-    </a>
-          
-
+    
+          <a href="./pdf/Emily Castillo Quiel - Ingeniera de Sistemas.pdf" download="CV - Emily Castillo Q.">
+            <button class="download-btn pixel-corners">
+              <div class="button-content">
+                <div class="svg-container">
+                  <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"></path>
+                  </svg>
+                </div>
+                <div class="text-container">
+                  <div class="text">Descargar CV</div>
+                </div>
+              </div>
+            </button>
+          </a>
         </div>
         <hr class="line">
       </div>
-
-
     </section>
+    
+    
   </main>
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -591,6 +824,20 @@
   <script src="./js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.querySelectorAll('input[name="tecnologia"]').forEach((input) => {
+        input.addEventListener('change', function () {
+            const selectedTech = this.value;
+            document.querySelectorAll('.cta').forEach((project) => {
+                if (selectedTech === "" || project.dataset.tecnologia === selectedTech) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
