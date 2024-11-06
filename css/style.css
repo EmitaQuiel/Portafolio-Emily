@@ -469,11 +469,10 @@ input:checked + .slider:before {
   --shadowColor: 0 100% 26%;
   display: flex;
   flex-direction: column;
-  /* Asegúrate de que el contenido interno de la tarjeta esté en columna */
   background: #ff736e;
   width: 35rem;
   height: 28rem;
-  /* Ancho fijo para las tarjetas */
+  
   box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
   border-radius: 0.8rem;
   overflow: hidden;
@@ -490,8 +489,8 @@ input:checked + .slider:before {
 }
 .cta img {
   display: block;
-  width: 100%; /* La imagen ocupará todo el ancho disponible */
-  height: 200px; /* Ajusta automáticamente la altura manteniendo la relación de aspecto */
+  width: 100%; 
+  height: 200px; 
   object-fit: cover;
   outline: 0.5rem solid;
 }
@@ -538,16 +537,12 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  /* Comienza transparente */
   transition: opacity 0.5s ease;
-  /* Transición de opacidad */
 }
 
 .modal.show {
   display: flex;
-  /* Mostrar modal */
   opacity: 1;
-  /* Opacidad plena */
 }
 
 .modal-content {
@@ -557,11 +552,8 @@ input:checked + .slider:before {
   height: 100%;
   text-align: center;
   transform: rotateY(-90deg);
-  /* Comienza rotado */
   transform-origin: top;
-  /* Origen de la rotación en el borde superior */
   transition: transform 0.5s ease;
-  /* Transición de rotación */
 }
 
 .modal.show .modal-content {
@@ -617,37 +609,6 @@ input:checked + .slider:before {
   margin-top: 50px;
 }
 
-/* .linea-separadora {
-  border: none;
-  position: relative;
-  width: 54%;
-  left: 24%;
-  height: 2px;
-  background-color: #d20901;
-} */
-
-/* .modal-content ul {
-  position: relative;
-  margin: 30px;
-  right: 340px;
-  padding: 0;
-}
-
-.modal-content li {
-  margin: 40px;
-  font-family: Nasi;
-  font-size: 25px;
-  color: #d20901;
-  list-style: none;
-} */
-
-/* .descripcion-proyecto {
-  width: 40%;
-  position: relative;
-  left: 850px;
-  bottom: 230px;
-} */
-
 .descripcion-proyecto p {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
@@ -656,15 +617,6 @@ input:checked + .slider:before {
   font-size: 19px;
   word-spacing: 15px;
 }
-
-/* .flex-container {
-  margin: 10px 0;
-}
-
-.inline-block {
-  display: inline-block;
-  margin-right: 10px;
-} */
 
 .linea-separadora-vertical {
   border: none;
@@ -770,6 +722,7 @@ input:checked + .slider:before {
     left: 11px;
     width: 120px;
     top: auto;
+    
     margin-top: 20px;
   }
 
@@ -801,6 +754,7 @@ input:checked + .slider:before {
     left: 11px;
     top: auto;
     margin-top: -30px;
+    
   }
 
   #lottie-animation {
@@ -1011,6 +965,17 @@ input:checked + .slider:before {
     background-color: #d20901;
     background-image: none;
   }
+  .filter-container {
+    flex-direction: column;
+    gap: 15px; /* Aumenta el espacio entre los filtros en móvil */
+  }
+  
+  .filter-label {
+    padding: 12px 18px; 
+    font-size: 14px; 
+    width: 100%; 
+    text-align: center;
+  }
 
   #app {
     position: relative;
@@ -1040,7 +1005,7 @@ input:checked + .slider:before {
   .container-cards {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    flex-wrap: wrap;
     gap: 1rem;
   }
   .card-educacion {
@@ -1188,7 +1153,7 @@ input:checked + .slider:before {
     color: white;
     border-color: #bababa;
   }
-}
+
 
 /* @media(max-width: 435px){
   .section-bienvenida {
@@ -1220,7 +1185,16 @@ input:checked + .slider:before {
   .title {
     font-size: 80px;
   }
-
+  .filter-container {
+    flex-direction: row; /* Mantiene el diseño horizontal en tablets */
+    gap: 10px; /* Mantiene el mismo gap que en escritorio */
+    padding: 0 10px;
+  }
+  
+  .filter-label {
+    padding: 10px 15px;
+    font-size: 16px; /* Ajusta el tamaño de la fuente para tablets */
+  }
   .section-sobremi {
     background-image: none;
     margin-top: 10px;
@@ -1326,6 +1300,7 @@ input:checked + .slider:before {
     display: none;
   }
   .download-btn {
+    background: #ffffff;
     position: relative;
     right: 780px;
   }
